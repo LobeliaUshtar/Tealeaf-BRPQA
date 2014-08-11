@@ -1,5 +1,6 @@
-BRPQA-Precourse
+BRPQA ~ Precourse - Lesson 8
 ============
 
-Build Robust and Production Quality Applications - pre-course
-  * HAML instead of ERB
+Build Robust and Production Quality Applications
+~ Pre-course
+~ Lesson 1
