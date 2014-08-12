@@ -1,10 +1,9 @@
 require "spec_helper"
 
 describe "A user" do
-  it "saves itself" do
-    user = User.new(email: "dummy@example.com", password: "dummy", password_confirmation: "dummy", full_name: "dummy")
-    user.save
+  it { should have_secure_password }
 
-    expect(User.first).to eq(user)
-  end
+  it { should validate_presence_of(:email) }
+  it { should validate_presence_of(:password) }
+  it { should validate_uniqueness_of(:email) }
 end
