@@ -146,8 +146,11 @@ DEPENDENCIES
   pg
   rails (= 4.1.1)
   rails_12factor
+  railties
   rspec-rails
   sass-rails
   shoulda-matchers
+  sprockets
+  sprockets-rails
   sqlite3
   uglifier
