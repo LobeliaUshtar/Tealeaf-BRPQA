@@ -32,6 +32,6 @@ end
 gem 'bootstrap_form'
 gem 'jquery-rails'
 
-gem 'sprockets'
-gem 'sprockets-rails'
-gem 'railties'
+# gem 'sprockets'
+# gem 'sprockets-rails'
+# gem 'railties'
