@@ -5,7 +5,7 @@ describe Video do
   it { should validate_presence_of(:title) }
   it { should validate_presence_of(:description) }
 
-  describe "search_by_title" do
+  describe "search by title" do
     it "returns an empty array if there is no match" do
       dragnet = Video.create(title: "Dragnet", description: "cops", created_at: 1.day.ago)
       maverick = Video.create(title: "Maverick", description: "western")
