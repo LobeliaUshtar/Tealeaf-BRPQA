@@ -23407,3 +23407,442 @@ Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-15 16:30:32 -
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-15 16:30:32 -0400
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255), "password_digest" varchar(255), "full_name" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.8ms)[0m  [1mCREATE TABLE "videos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "small_cover" varchar(255), "large_cover" varchar(255), "created_at" datetime, "updated_at" datetime, "category_id" integer) [0m
+  [1m[35m (0.8ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140807135717')
+  [1m[36m (0.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140805155121')[0m
+  [1m[35m (0.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140807135614')
+  [1m[36m (0.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140807135625')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'gabby@example.com' LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "full_name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-08-15 20:52:00.693397"], ["email", "gabby@example.com"], ["full_name", "Gabitha"], ["password_digest", "$2a$10$lUg8mTFtgPyTrRHpIfbkNOHMkWMZJP76ExhjxA5aP9oNJbhjRkV.G"], ["updated_at", "2014-08-15 20:52:00.693397"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-08-15 20:52:00.701525"], ["name", "Mystery"], ["updated_at", "2014-08-15 20:52:00.701525"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-08-15 20:52:00.703256"], ["name", "Comedy"], ["updated_at", "2014-08-15 20:52:00.703256"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-08-15 20:52:00.704621"], ["name", "Reality"], ["updated_at", "2014-08-15 20:52:00.704621"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "large_cover", "small_cover", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2014-08-15 20:52:00.714241"], ["description", "Adrian Monk is a brilliant San Francisco detective, whose obsessive compulsive disorder just happens to get in the way."], ["large_cover", "/tmp/monk_large.jpg"], ["small_cover", "/tmp/monk.jpg"], ["title", "Monk"], ["updated_at", "2014-08-15 20:52:00.714241"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "large_cover", "small_cover", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["category_id", 2], ["created_at", "2014-08-15 20:52:00.716796"], ["description", "In a wacky Rhode Island town, a dysfunctional family strive to cope with everyday life as they are thrown from one crazy scenario to another."], ["large_cover", ""], ["small_cover", "/tmp/family_guy.jpg"], ["title", "Family Guy"], ["updated_at", "2014-08-15 20:52:00.716796"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "large_cover", "small_cover", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["category_id", 2], ["created_at", "2014-08-15 20:52:00.718792"], ["description", "Fry, a pizza guy is accidentally frozen in 1999 and thawed out New Year's Eve 2999."], ["large_cover", ""], ["small_cover", "/tmp/futurama.jpg"], ["title", "Futurama"], ["updated_at", "2014-08-15 20:52:00.718792"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "large_cover", "small_cover", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["category_id", 2], ["created_at", "2014-08-15 20:52:00.720728"], ["description", "Follows the misadventures of four irreverent grade-schoolers in the quiet, dysfunctional town of South Park, Colorado."], ["large_cover", ""], ["small_cover", "/tmp/south_park.jpg"], ["title", "South Park"], ["updated_at", "2014-08-15 20:52:00.720728"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "large_cover", "small_cover", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2014-08-15 20:52:00.722565"], ["description", "Adrian Monk is a brilliant San Francisco detective, whose obsessive compulsive disorder just happens to get in the way."], ["large_cover", "/tmp/monk_large.jpg"], ["small_cover", "/tmp/monk.jpg"], ["title", "Monk2"], ["updated_at", "2014-08-15 20:52:00.722565"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "large_cover", "small_cover", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["category_id", 2], ["created_at", "2014-08-15 20:52:00.724338"], ["description", "In a wacky Rhode Island town, a dysfunctional family strive to cope with everyday life as they are thrown from one crazy scenario to another."], ["large_cover", ""], ["small_cover", "/tmp/family_guy.jpg"], ["title", "Family Guy2"], ["updated_at", "2014-08-15 20:52:00.724338"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "large_cover", "small_cover", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["category_id", 2], ["created_at", "2014-08-15 20:52:00.726429"], ["description", "Fry, a pizza guy is accidentally frozen in 1999 and thawed out New Year's Eve 2999."], ["large_cover", ""], ["small_cover", "/tmp/futurama.jpg"], ["title", "Futurama2"], ["updated_at", "2014-08-15 20:52:00.726429"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "large_cover", "small_cover", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["category_id", 2], ["created_at", "2014-08-15 20:52:00.728264"], ["description", "Follows the misadventures of four irreverent grade-schoolers in the quiet, dysfunctional town of South Park, Colorado."], ["large_cover", ""], ["small_cover", "/tmp/south_park.jpg"], ["title", "South Park2"], ["updated_at", "2014-08-15 20:52:00.728264"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "large_cover", "small_cover", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2014-08-15 20:52:00.730081"], ["description", "Adrian Monk is a brilliant San Francisco detective, whose obsessive compulsive disorder just happens to get in the way."], ["large_cover", "/tmp/monk_large.jpg"], ["small_cover", "/tmp/monk.jpg"], ["title", "Monk3"], ["updated_at", "2014-08-15 20:52:00.730081"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "large_cover", "small_cover", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["category_id", 2], ["created_at", "2014-08-15 20:52:00.731856"], ["description", "In a wacky Rhode Island town, a dysfunctional family strive to cope with everyday life as they are thrown from one crazy scenario to another."], ["large_cover", ""], ["small_cover", "/tmp/family_guy.jpg"], ["title", "Family Guy3"], ["updated_at", "2014-08-15 20:52:00.731856"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "large_cover", "small_cover", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["category_id", 2], ["created_at", "2014-08-15 20:52:00.733507"], ["description", "Fry, a pizza guy is accidentally frozen in 1999 and thawed out New Year's Eve 2999."], ["large_cover", ""], ["small_cover", "/tmp/futurama.jpg"], ["title", "Futurama3"], ["updated_at", "2014-08-15 20:52:00.733507"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "large_cover", "small_cover", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["category_id", 2], ["created_at", "2014-08-15 20:52:00.735131"], ["description", "Follows the misadventures of four irreverent grade-schoolers in the quiet, dysfunctional town of South Park, Colorado."], ["large_cover", ""], ["small_cover", "/tmp/south_park.jpg"], ["title", "South Park3"], ["updated_at", "2014-08-15 20:52:00.735131"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-15 16:52:27 -0400
+Processing by VideosController#index as HTML
+  [1m[36mCategory Load (0.9ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mVideo Load (0.2ms)[0m  SELECT  "videos".* FROM "videos"  WHERE "videos"."category_id" = ?  ORDER BY created_at DESC LIMIT 6  [["category_id", 1]]
+  [1m[36mVideo Load (0.2ms)[0m  [1mSELECT  "videos".* FROM "videos"  WHERE "videos"."category_id" = ?  ORDER BY created_at DESC LIMIT 6[0m  [["category_id", 2]]
+  [1m[35mVideo Load (0.1ms)[0m  SELECT  "videos".* FROM "videos"  WHERE "videos"."category_id" = ?  ORDER BY created_at DESC LIMIT 6  [["category_id", 3]]
+  Rendered videos/index.html.haml within layouts/application (30.4ms)
+  Rendered shared/_header.html.haml (3.9ms)
+  Rendered shared/_messages.html.haml (1.0ms)
+Completed 200 OK in 190ms (Views: 169.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-15 16:52:28 -0400
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-08-15 16:52:28 -0400
+
+
+Started GET "/assets/whitespace-reset.css?body=1" for 127.0.0.1 at 2014-08-15 16:52:28 -0400
+
+
+Started GET "/assets/account_and_billing.css?body=1" for 127.0.0.1 at 2014-08-15 16:52:28 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-08-15 16:52:28 -0400
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-08-15 16:52:28 -0400
+
+
+Started GET "/assets/genre.css?body=1" for 127.0.0.1 at 2014-08-15 16:52:28 -0400
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-08-15 16:52:28 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-08-15 16:52:28 -0400
+
+
+Started GET "/assets/invite.css?body=1" for 127.0.0.1 at 2014-08-15 16:52:28 -0400
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-08-15 16:52:28 -0400
+
+
+Started GET "/assets/public_pages.css?body=1" for 127.0.0.1 at 2014-08-15 16:52:28 -0400
+
+
+Started GET "/assets/queue.css?body=1" for 127.0.0.1 at 2014-08-15 16:52:28 -0400
+
+
+Started GET "/assets/videos.css?body=1" for 127.0.0.1 at 2014-08-15 16:52:28 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-08-15 16:52:28 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-15 16:52:28 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-15 16:52:28 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-08-15 16:52:28 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-08-15 16:52:28 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-08-15 16:52:28 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-08-15 16:52:28 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-08-15 16:52:28 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-08-15 16:52:28 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-08-15 16:52:28 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-08-15 16:52:28 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-08-15 16:52:28 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-08-15 16:52:28 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-08-15 16:52:28 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-08-15 16:52:28 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-15 16:52:28 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-15 16:52:28 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-15 16:53:24 -0400
+Processing by VideosController#index as HTML
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mVideo Load (0.1ms)[0m  SELECT  "videos".* FROM "videos"  WHERE "videos"."category_id" = ?  ORDER BY created_at DESC LIMIT 6  [["category_id", 1]]
+  [1m[36mVideo Load (0.1ms)[0m  [1mSELECT  "videos".* FROM "videos"  WHERE "videos"."category_id" = ?  ORDER BY created_at DESC LIMIT 6[0m  [["category_id", 2]]
+  [1m[35mVideo Load (0.1ms)[0m  SELECT  "videos".* FROM "videos"  WHERE "videos"."category_id" = ?  ORDER BY created_at DESC LIMIT 6  [["category_id", 3]]
+  Rendered videos/index.html.haml within layouts/application (6.0ms)
+  Rendered shared/_header.html.haml (0.6ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-15 16:53:24 -0400
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-08-15 16:53:24 -0400
+
+
+Started GET "/assets/account_and_billing.css?body=1" for 127.0.0.1 at 2014-08-15 16:53:24 -0400
+
+
+Started GET "/assets/whitespace-reset.css?body=1" for 127.0.0.1 at 2014-08-15 16:53:24 -0400
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-08-15 16:53:24 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-08-15 16:53:24 -0400
+
+
+Started GET "/assets/genre.css?body=1" for 127.0.0.1 at 2014-08-15 16:53:24 -0400
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-08-15 16:53:24 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-08-15 16:53:24 -0400
+
+
+Started GET "/assets/invite.css?body=1" for 127.0.0.1 at 2014-08-15 16:53:24 -0400
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-08-15 16:53:24 -0400
+
+
+Started GET "/assets/public_pages.css?body=1" for 127.0.0.1 at 2014-08-15 16:53:24 -0400
+
+
+Started GET "/assets/queue.css?body=1" for 127.0.0.1 at 2014-08-15 16:53:24 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-08-15 16:53:24 -0400
+
+
+Started GET "/assets/videos.css?body=1" for 127.0.0.1 at 2014-08-15 16:53:24 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-15 16:53:24 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-15 16:53:24 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-08-15 16:53:24 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-08-15 16:53:24 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-08-15 16:53:24 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-08-15 16:53:24 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-08-15 16:53:24 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-08-15 16:53:24 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-08-15 16:53:24 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-08-15 16:53:24 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-08-15 16:53:24 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-08-15 16:53:24 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-08-15 16:53:24 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-08-15 16:53:24 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-15 16:53:24 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-15 16:53:24 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-15 16:53:35 -0400
+Processing by VideosController#index as HTML
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mVideo Load (0.1ms)[0m  SELECT  "videos".* FROM "videos"  WHERE "videos"."category_id" = ?  ORDER BY created_at DESC LIMIT 6  [["category_id", 1]]
+  [1m[36mVideo Load (0.1ms)[0m  [1mSELECT  "videos".* FROM "videos"  WHERE "videos"."category_id" = ?  ORDER BY created_at DESC LIMIT 6[0m  [["category_id", 2]]
+  [1m[35mVideo Load (0.1ms)[0m  SELECT  "videos".* FROM "videos"  WHERE "videos"."category_id" = ?  ORDER BY created_at DESC LIMIT 6  [["category_id", 3]]
+  Rendered videos/index.html.haml within layouts/application (5.1ms)
+  Rendered shared/_header.html.haml (0.5ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-08-15 16:53:35 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-15 16:53:35 -0400
+
+
+Started GET "/assets/whitespace-reset.css?body=1" for 127.0.0.1 at 2014-08-15 16:53:35 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-08-15 16:53:35 -0400
+
+
+Started GET "/assets/account_and_billing.css?body=1" for 127.0.0.1 at 2014-08-15 16:53:35 -0400
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-08-15 16:53:35 -0400
+
+
+Started GET "/assets/genre.css?body=1" for 127.0.0.1 at 2014-08-15 16:53:35 -0400
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-08-15 16:53:35 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-08-15 16:53:35 -0400
+
+
+Started GET "/assets/invite.css?body=1" for 127.0.0.1 at 2014-08-15 16:53:35 -0400
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-08-15 16:53:35 -0400
+
+
+Started GET "/assets/public_pages.css?body=1" for 127.0.0.1 at 2014-08-15 16:53:35 -0400
+
+
+Started GET "/assets/queue.css?body=1" for 127.0.0.1 at 2014-08-15 16:53:35 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-08-15 16:53:35 -0400
+
+
+Started GET "/assets/videos.css?body=1" for 127.0.0.1 at 2014-08-15 16:53:35 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-15 16:53:35 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-15 16:53:35 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-08-15 16:53:35 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-08-15 16:53:35 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-08-15 16:53:35 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-08-15 16:53:35 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-08-15 16:53:35 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-08-15 16:53:35 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-08-15 16:53:35 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-08-15 16:53:35 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-08-15 16:53:35 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-08-15 16:53:35 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-15 16:53:35 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-08-15 16:53:35 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-08-15 16:53:35 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-15 16:53:35 -0400
+  [1m[36m (9.3ms)[0m  [1mCREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.1ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255), "password_digest" varchar(255), "full_name" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.8ms)[0m  [1mCREATE TABLE "videos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "small_cover" varchar(255), "large_cover" varchar(255), "created_at" datetime, "updated_at" datetime, "category_id" integer) [0m
+  [1m[35m (1.1ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (1.0ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140807135717')
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140805155121')[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140807135614')
+  [1m[36m (0.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140807135625')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'gabby@example.com' LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "full_name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-08-15 20:54:34.899710"], ["email", "gabby@example.com"], ["full_name", "Gabitha"], ["password_digest", "$2a$10$wqtrH0SJ4y6EFwFRncvEN.wf2jGXg1KMCueoAfW00WkNpRTFgAroO"], ["updated_at", "2014-08-15 20:54:34.899710"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-08-15 20:54:34.908394"], ["name", "Mystery"], ["updated_at", "2014-08-15 20:54:34.908394"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-08-15 20:54:34.910713"], ["name", "Comedy"], ["updated_at", "2014-08-15 20:54:34.910713"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-08-15 20:54:34.912974"], ["name", "Reality"], ["updated_at", "2014-08-15 20:54:34.912974"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "large_cover", "small_cover", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2014-08-15 20:54:34.924560"], ["description", "Adrian Monk is a brilliant San Francisco detective, whose obsessive compulsive disorder just happens to get in the way."], ["large_cover", "/tmp/monk_large.jpg"], ["small_cover", "/tmp/monk.jpg"], ["title", "Monk"], ["updated_at", "2014-08-15 20:54:34.924560"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "large_cover", "small_cover", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["category_id", 2], ["created_at", "2014-08-15 20:54:34.926877"], ["description", "In a wacky Rhode Island town, a dysfunctional family strive to cope with everyday life as they are thrown from one crazy scenario to another."], ["large_cover", ""], ["small_cover", "/tmp/family_guy.jpg"], ["title", "Family Guy"], ["updated_at", "2014-08-15 20:54:34.926877"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "large_cover", "small_cover", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["category_id", 2], ["created_at", "2014-08-15 20:54:34.928916"], ["description", "Fry, a pizza guy is accidentally frozen in 1999 and thawed out New Year's Eve 2999."], ["large_cover", ""], ["small_cover", "/tmp/futurama.jpg"], ["title", "Futurama"], ["updated_at", "2014-08-15 20:54:34.928916"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "large_cover", "small_cover", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["category_id", 2], ["created_at", "2014-08-15 20:54:34.931137"], ["description", "Follows the misadventures of four irreverent grade-schoolers in the quiet, dysfunctional town of South Park, Colorado."], ["large_cover", ""], ["small_cover", "/tmp/south_park.jpg"], ["title", "South Park"], ["updated_at", "2014-08-15 20:54:34.931137"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "large_cover", "small_cover", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2014-08-15 20:54:34.932840"], ["description", "Adrian Monk is a brilliant San Francisco detective, whose obsessive compulsive disorder just happens to get in the way."], ["large_cover", "/tmp/monk_large.jpg"], ["small_cover", "/tmp/monk.jpg"], ["title", "Monk2"], ["updated_at", "2014-08-15 20:54:34.932840"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "large_cover", "small_cover", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["category_id", 2], ["created_at", "2014-08-15 20:54:34.934719"], ["description", "In a wacky Rhode Island town, a dysfunctional family strive to cope with everyday life as they are thrown from one crazy scenario to another."], ["large_cover", ""], ["small_cover", "/tmp/family_guy.jpg"], ["title", "Family Guy2"], ["updated_at", "2014-08-15 20:54:34.934719"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "large_cover", "small_cover", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["category_id", 2], ["created_at", "2014-08-15 20:54:34.936702"], ["description", "Fry, a pizza guy is accidentally frozen in 1999 and thawed out New Year's Eve 2999."], ["large_cover", ""], ["small_cover", "/tmp/futurama.jpg"], ["title", "Futurama2"], ["updated_at", "2014-08-15 20:54:34.936702"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "large_cover", "small_cover", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["category_id", 2], ["created_at", "2014-08-15 20:54:34.938423"], ["description", "Follows the misadventures of four irreverent grade-schoolers in the quiet, dysfunctional town of South Park, Colorado."], ["large_cover", ""], ["small_cover", "/tmp/south_park.jpg"], ["title", "South Park2"], ["updated_at", "2014-08-15 20:54:34.938423"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "large_cover", "small_cover", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2014-08-15 20:54:34.940177"], ["description", "Adrian Monk is a brilliant San Francisco detective, whose obsessive compulsive disorder just happens to get in the way."], ["large_cover", "/tmp/monk_large.jpg"], ["small_cover", "/tmp/monk.jpg"], ["title", "Monk3"], ["updated_at", "2014-08-15 20:54:34.940177"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "large_cover", "small_cover", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["category_id", 2], ["created_at", "2014-08-15 20:54:34.942104"], ["description", "In a wacky Rhode Island town, a dysfunctional family strive to cope with everyday life as they are thrown from one crazy scenario to another."], ["large_cover", ""], ["small_cover", "/tmp/family_guy.jpg"], ["title", "Family Guy3"], ["updated_at", "2014-08-15 20:54:34.942104"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "large_cover", "small_cover", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["category_id", 2], ["created_at", "2014-08-15 20:54:34.944262"], ["description", "Fry, a pizza guy is accidentally frozen in 1999 and thawed out New Year's Eve 2999."], ["large_cover", ""], ["small_cover", "/tmp/futurama.jpg"], ["title", "Futurama3"], ["updated_at", "2014-08-15 20:54:34.944262"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "large_cover", "small_cover", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["category_id", 2], ["created_at", "2014-08-15 20:54:34.946827"], ["description", "Follows the misadventures of four irreverent grade-schoolers in the quiet, dysfunctional town of South Park, Colorado."], ["large_cover", ""], ["small_cover", "/tmp/south_park.jpg"], ["title", "South Park3"], ["updated_at", "2014-08-15 20:54:34.946827"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
