@@ -4,6 +4,7 @@ ruby '2.1.1'
 gem 'rails', '4.1.1'
 gem 'haml-rails'
 gem 'bootstrap-sass'
+gem 'bootstrap_form'
 gem 'bcrypt'
 
 group :assets do
@@ -29,7 +30,6 @@ group :production do
   gem 'rails_12factor'
 end
 
-gem 'bootstrap_form'
 gem 'jquery-rails'
 gem 'sprockets'
 gem 'sprockets-rails'
