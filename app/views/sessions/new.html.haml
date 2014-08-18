@@ -4,10 +4,11 @@
       = form_tag sessions_path, class: 'sign_in' do
         %header
           %h1 Sign in
-        %fieldset
+        %fieldset.form-horizontal
           =label_tag :email, 'Email Address'
           = email_field_tag :email
           =label_tag :email, 'Password'
           = password_field_tag :password
         %fieldset.form-group.action
-          %input(type="submit" value="Sign in" class="btn btn-danger")
+          .controls
+            %input(type="submit" value="Sign in" class="btn btn-danger")

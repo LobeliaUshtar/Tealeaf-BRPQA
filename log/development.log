@@ -38562,3 +38562,2858 @@ Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-18 10:18:21 -
 
 
 Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-08-18 10:18:21 -0400
+
+
+Started GET "/videos/search?search_term=o" for 127.0.0.1 at 2014-08-18 10:27:51 -0400
+Processing by VideosController#search as HTML
+  Parameters: {"search_term"=>"o"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVideo Load (0.2ms)[0m  SELECT "videos".* FROM "videos"  WHERE (title LIKE '%o%')  ORDER BY created_at DESC
+  Rendered videos/search.html.haml within layouts/application (11.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered shared/_header.html.haml (12.5ms)
+  Rendered shared/_messages.html.haml (1.1ms)
+Completed 200 OK in 175ms (Views: 145.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-18 10:27:51 -0400
+
+
+Started GET "/assets/whitespace-reset.css?body=1" for 127.0.0.1 at 2014-08-18 10:27:51 -0400
+
+
+Started GET "/assets/account_and_billing.css?body=1" for 127.0.0.1 at 2014-08-18 10:27:51 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-08-18 10:27:51 -0400
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-08-18 10:27:51 -0400
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-08-18 10:27:51 -0400
+
+
+Started GET "/assets/genre.css?body=1" for 127.0.0.1 at 2014-08-18 10:27:51 -0400
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-08-18 10:27:51 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-08-18 10:27:51 -0400
+
+
+Started GET "/assets/invite.css?body=1" for 127.0.0.1 at 2014-08-18 10:27:51 -0400
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-08-18 10:27:51 -0400
+
+
+Started GET "/assets/public_pages.css?body=1" for 127.0.0.1 at 2014-08-18 10:27:51 -0400
+
+
+Started GET "/assets/queue.css?body=1" for 127.0.0.1 at 2014-08-18 10:27:51 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-08-18 10:27:51 -0400
+
+
+Started GET "/assets/videos.css?body=1" for 127.0.0.1 at 2014-08-18 10:27:51 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-18 10:27:51 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-18 10:27:51 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-08-18 10:27:51 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-08-18 10:27:51 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-08-18 10:27:51 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-08-18 10:27:51 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-08-18 10:27:51 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-08-18 10:27:51 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-08-18 10:27:51 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-08-18 10:27:51 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-08-18 10:27:51 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-08-18 10:27:51 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-08-18 10:27:51 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-08-18 10:27:51 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-18 10:27:51 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-18 10:27:51 -0400
+
+
+Started GET "/videos/search?search_term=t" for 127.0.0.1 at 2014-08-18 10:27:55 -0400
+Processing by VideosController#search as HTML
+  Parameters: {"search_term"=>"t"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVideo Load (0.2ms)[0m  SELECT "videos".* FROM "videos"  WHERE (title LIKE '%t%')  ORDER BY created_at DESC
+  Rendered videos/search.html.haml within layouts/application (2.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered shared/_header.html.haml (1.8ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+Completed 200 OK in 15ms (Views: 13.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-08-18 10:27:55 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-18 10:27:55 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-08-18 10:27:55 -0400
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-08-18 10:27:55 -0400
+
+
+Started GET "/assets/account_and_billing.css?body=1" for 127.0.0.1 at 2014-08-18 10:27:55 -0400
+
+
+Started GET "/assets/whitespace-reset.css?body=1" for 127.0.0.1 at 2014-08-18 10:27:55 -0400
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-08-18 10:27:55 -0400
+
+
+Started GET "/assets/genre.css?body=1" for 127.0.0.1 at 2014-08-18 10:27:55 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-08-18 10:27:55 -0400
+
+
+Started GET "/assets/public_pages.css?body=1" for 127.0.0.1 at 2014-08-18 10:27:55 -0400
+
+
+Started GET "/assets/invite.css?body=1" for 127.0.0.1 at 2014-08-18 10:27:55 -0400
+
+
+Started GET "/assets/queue.css?body=1" for 127.0.0.1 at 2014-08-18 10:27:55 -0400
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-08-18 10:27:55 -0400
+
+
+Started GET "/assets/videos.css?body=1" for 127.0.0.1 at 2014-08-18 10:27:55 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-08-18 10:27:55 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-18 10:27:55 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-18 10:27:55 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-08-18 10:27:55 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-08-18 10:27:55 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-08-18 10:27:55 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-08-18 10:27:55 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-08-18 10:27:55 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-08-18 10:27:55 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-08-18 10:27:55 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-08-18 10:27:55 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-08-18 10:27:55 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-08-18 10:27:55 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-08-18 10:27:55 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-08-18 10:27:55 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-18 10:27:55 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-18 10:27:55 -0400
+
+
+Started GET "/videos/search?search_term=a" for 127.0.0.1 at 2014-08-18 10:27:59 -0400
+Processing by VideosController#search as HTML
+  Parameters: {"search_term"=>"a"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVideo Load (0.2ms)[0m  SELECT "videos".* FROM "videos"  WHERE (title LIKE '%a%')  ORDER BY created_at DESC
+  Rendered videos/search.html.haml within layouts/application (2.4ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered shared/_header.html.haml (1.6ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+Completed 200 OK in 16ms (Views: 13.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-08-18 10:27:59 -0400
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-08-18 10:27:59 -0400
+
+
+Started GET "/assets/account_and_billing.css?body=1" for 127.0.0.1 at 2014-08-18 10:27:59 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-08-18 10:27:59 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-18 10:27:59 -0400
+
+
+Started GET "/assets/whitespace-reset.css?body=1" for 127.0.0.1 at 2014-08-18 10:27:59 -0400
+
+
+Started GET "/assets/genre.css?body=1" for 127.0.0.1 at 2014-08-18 10:27:59 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-08-18 10:27:59 -0400
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-08-18 10:27:59 -0400
+
+
+Started GET "/assets/invite.css?body=1" for 127.0.0.1 at 2014-08-18 10:27:59 -0400
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-08-18 10:27:59 -0400
+
+
+Started GET "/assets/public_pages.css?body=1" for 127.0.0.1 at 2014-08-18 10:27:59 -0400
+
+
+Started GET "/assets/queue.css?body=1" for 127.0.0.1 at 2014-08-18 10:27:59 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-08-18 10:27:59 -0400
+
+
+Started GET "/assets/videos.css?body=1" for 127.0.0.1 at 2014-08-18 10:27:59 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-18 10:27:59 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-18 10:27:59 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-08-18 10:27:59 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-08-18 10:27:59 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-08-18 10:27:59 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-08-18 10:27:59 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-08-18 10:27:59 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-08-18 10:27:59 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-08-18 10:27:59 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-08-18 10:27:59 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-08-18 10:27:59 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-08-18 10:27:59 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-08-18 10:27:59 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-08-18 10:27:59 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-18 10:27:59 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-18 10:27:59 -0400
+
+
+Started GET "/videos/search?search_term=a" for 127.0.0.1 at 2014-08-18 10:32:16 -0400
+Processing by VideosController#search as HTML
+  Parameters: {"search_term"=>"a"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVideo Load (0.2ms)[0m  SELECT "videos".* FROM "videos"  WHERE (title LIKE '%a%')  ORDER BY created_at DESC
+  Rendered videos/search.html.haml within layouts/application (2.7ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered shared/_header.html.haml (1.5ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-18 10:32:16 -0400
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-08-18 10:32:16 -0400
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-08-18 10:32:16 -0400
+
+
+Started GET "/assets/genre.css?body=1" for 127.0.0.1 at 2014-08-18 10:32:16 -0400
+
+
+Started GET "/assets/whitespace-reset.css?body=1" for 127.0.0.1 at 2014-08-18 10:32:16 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-08-18 10:32:16 -0400
+
+
+Started GET "/assets/account_and_billing.css?body=1" for 127.0.0.1 at 2014-08-18 10:32:16 -0400
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-08-18 10:32:16 -0400
+
+
+Started GET "/assets/invite.css?body=1" for 127.0.0.1 at 2014-08-18 10:32:16 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-08-18 10:32:16 -0400
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-08-18 10:32:16 -0400
+
+
+Started GET "/assets/public_pages.css?body=1" for 127.0.0.1 at 2014-08-18 10:32:16 -0400
+
+
+Started GET "/assets/queue.css?body=1" for 127.0.0.1 at 2014-08-18 10:32:16 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-08-18 10:32:16 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-18 10:32:16 -0400
+
+
+Started GET "/assets/videos.css?body=1" for 127.0.0.1 at 2014-08-18 10:32:16 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-18 10:32:16 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-08-18 10:32:16 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-08-18 10:32:16 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-08-18 10:32:16 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-08-18 10:32:16 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-08-18 10:32:16 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-08-18 10:32:16 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-08-18 10:32:16 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-08-18 10:32:16 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-08-18 10:32:16 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-08-18 10:32:16 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-08-18 10:32:16 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-08-18 10:32:16 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-18 10:32:16 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-18 10:32:16 -0400
+
+
+Started GET "/sign_out" for 127.0.0.1 at 2014-08-18 10:32:20 -0400
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-18 10:32:20 -0400
+Processing by PagesController#front as HTML
+  Rendered pages/front.html.haml within layouts/application (1.8ms)
+  Rendered shared/_header.html.haml (0.2ms)
+  Rendered shared/_messages.html.haml (0.2ms)
+Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-18 10:32:20 -0400
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-08-18 10:32:20 -0400
+
+
+Started GET "/assets/account_and_billing.css?body=1" for 127.0.0.1 at 2014-08-18 10:32:20 -0400
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-08-18 10:32:20 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-08-18 10:32:20 -0400
+
+
+Started GET "/assets/whitespace-reset.css?body=1" for 127.0.0.1 at 2014-08-18 10:32:20 -0400
+
+
+Started GET "/assets/genre.css?body=1" for 127.0.0.1 at 2014-08-18 10:32:20 -0400
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-08-18 10:32:20 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-08-18 10:32:20 -0400
+
+
+Started GET "/assets/invite.css?body=1" for 127.0.0.1 at 2014-08-18 10:32:20 -0400
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-08-18 10:32:20 -0400
+
+
+Started GET "/assets/queue.css?body=1" for 127.0.0.1 at 2014-08-18 10:32:20 -0400
+
+
+Started GET "/assets/public_pages.css?body=1" for 127.0.0.1 at 2014-08-18 10:32:20 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-08-18 10:32:20 -0400
+
+
+Started GET "/assets/videos.css?body=1" for 127.0.0.1 at 2014-08-18 10:32:20 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-18 10:32:20 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-08-18 10:32:20 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-18 10:32:20 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-08-18 10:32:20 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-08-18 10:32:20 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-08-18 10:32:20 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-08-18 10:32:20 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-08-18 10:32:20 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-08-18 10:32:20 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-08-18 10:32:20 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-08-18 10:32:20 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-08-18 10:32:20 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-08-18 10:32:20 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-18 10:32:20 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-08-18 10:32:20 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-18 10:32:20 -0400
+
+
+Started GET "/register" for 127.0.0.1 at 2014-08-18 10:32:22 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (22.4ms)
+  Rendered shared/_header.html.haml (0.2ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+Completed 200 OK in 38ms (Views: 37.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-18 10:32:22 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-08-18 10:32:22 -0400
+
+
+Started GET "/assets/whitespace-reset.css?body=1" for 127.0.0.1 at 2014-08-18 10:32:22 -0400
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-08-18 10:32:22 -0400
+
+
+Started GET "/assets/account_and_billing.css?body=1" for 127.0.0.1 at 2014-08-18 10:32:22 -0400
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-08-18 10:32:22 -0400
+
+
+Started GET "/assets/genre.css?body=1" for 127.0.0.1 at 2014-08-18 10:32:22 -0400
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-08-18 10:32:22 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-08-18 10:32:22 -0400
+
+
+Started GET "/assets/invite.css?body=1" for 127.0.0.1 at 2014-08-18 10:32:22 -0400
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-08-18 10:32:22 -0400
+
+
+Started GET "/assets/public_pages.css?body=1" for 127.0.0.1 at 2014-08-18 10:32:22 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-08-18 10:32:22 -0400
+
+
+Started GET "/assets/queue.css?body=1" for 127.0.0.1 at 2014-08-18 10:32:22 -0400
+
+
+Started GET "/assets/videos.css?body=1" for 127.0.0.1 at 2014-08-18 10:32:22 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-18 10:32:22 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-18 10:32:22 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-08-18 10:32:22 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-08-18 10:32:22 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-08-18 10:32:22 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-08-18 10:32:22 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-08-18 10:32:22 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-08-18 10:32:22 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-08-18 10:32:22 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-08-18 10:32:22 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-08-18 10:32:22 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-08-18 10:32:22 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-08-18 10:32:22 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-08-18 10:32:22 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-18 10:32:22 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-18 10:32:22 -0400
+
+
+Started GET "/register" for 127.0.0.1 at 2014-08-18 10:36:35 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (12.2ms)
+Completed 500 Internal Server Error in 14ms
+
+SyntaxError (/Users/osiecki/Documents/Tealeaf/BRPQA/TL-flix/app/views/users/new.html.haml:35: syntax error, unexpected ')'
+));}\n  <div class='form-group'>\n    #{_hamlout.adjust_tabs(1); 
+ ^
+/Users/osiecki/Documents/Tealeaf/BRPQA/TL-flix/app/views/users/new.html.haml:35: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+));}\n  <div class='form-group'>\n    #{_hamlout.adjust_tabs(1); 
+                  ^
+/Users/osiecki/Documents/Tealeaf/BRPQA/TL-flix/app/views/users/new.html.haml:35: syntax error, unexpected $undefined
+));}\n  <div class='form-group'>\n    #{_hamlout.adjust_tabs(1); 
+                                 ^
+/Users/osiecki/Documents/Tealeaf/BRPQA/TL-flix/app/views/users/new.html.haml:37: syntax error, unexpected '}', expecting keyword_end
+));}\n  </div>\n  <div class='form-group'>\n    #{
+    ^
+/Users/osiecki/Documents/Tealeaf/BRPQA/TL-flix/app/views/users/new.html.haml:39: unknown regexp options - dv
+/Users/osiecki/Documents/Tealeaf/BRPQA/TL-flix/app/views/users/new.html.haml:39: syntax error, unexpected $undefined
+));}\n  </div>\n  <div class='form-group'>\n    #{
+               ^
+/Users/osiecki/Documents/Tealeaf/BRPQA/TL-flix/app/views/users/new.html.haml:39: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+));}\n  </div>\n  <div class='form-group'>\n    #{
+                            ^
+/Users/osiecki/Documents/Tealeaf/BRPQA/TL-flix/app/views/users/new.html.haml:39: syntax error, unexpected $undefined
+));}\n  </div>\n  <div class='form-group'>\n    #{
+                                           ^
+/Users/osiecki/Documents/Tealeaf/BRPQA/TL-flix/app/views/users/new.html.haml:41: syntax error, unexpected '}', expecting keyword_end
+));}\n  </div>\n  <div class='form-group'>\n    #{
+    ^
+/Users/osiecki/Documents/Tealeaf/BRPQA/TL-flix/app/views/users/new.html.haml:43: unknown regexp options - dv
+/Users/osiecki/Documents/Tealeaf/BRPQA/TL-flix/app/views/users/new.html.haml:43: syntax error, unexpected $undefined
+));}\n  </div>\n  <fieldset class='form-grou...
+               ^
+/Users/osiecki/Documents/Tealeaf/BRPQA/TL-flix/app/views/users/new.html.haml:43: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+...;}\n  </div>\n  <fieldset class='form-group action'>\n    <d...
+...                               ^
+/Users/osiecki/Documents/Tealeaf/BRPQA/TL-flix/app/views/users/new.html.haml:43: syntax error, unexpected $undefined
+...set class='form-group action'>\n    <div class='controls'>\n...
+...                               ^
+/Users/osiecki/Documents/Tealeaf/BRPQA/TL-flix/app/views/users/new.html.haml:43: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+...-group action'>\n    <div class='controls'>\n      <input cl...
+...                               ^
+/Users/osiecki/Documents/Tealeaf/BRPQA/TL-flix/app/views/users/new.html.haml:43: syntax error, unexpected $undefined
+...'>\n    <div class='controls'>\n      <input class='btn btn-...
+...                               ^
+/Users/osiecki/Documents/Tealeaf/BRPQA/TL-flix/app/views/users/new.html.haml:43: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+...'controls'>\n      <input class='btn btn-danger' type='submi...
+...                               ^
+/Users/osiecki/Documents/Tealeaf/BRPQA/TL-flix/app/views/users/new.html.haml:43: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...put class='btn btn-danger' type='submit' value='Sign Up'>\n ...
+...                               ^
+/Users/osiecki/Documents/Tealeaf/BRPQA/TL-flix/app/views/users/new.html.haml:43: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...btn-danger' type='submit' value='Sign Up'>\n    </div>\n  </...
+...                               ^
+/Users/osiecki/Documents/Tealeaf/BRPQA/TL-flix/app/views/users/new.html.haml:43: syntax error, unexpected $undefined
+...type='submit' value='Sign Up'>\n    </div>\n  </fieldset>\n<...
+...                               ^
+/Users/osiecki/Documents/Tealeaf/BRPQA/TL-flix/app/views/users/new.html.haml:43: unknown regexp options - fldt
+/Users/osiecki/Documents/Tealeaf/BRPQA/TL-flix/app/views/users/new.html.haml:43: syntax error, unexpected $undefined
+...p'>\n    </div>\n  </fieldset>\n</form>\n", -2, false);::Ham...
+...                               ^
+/Users/osiecki/Documents/Tealeaf/BRPQA/TL-flix/app/views/users/new.html.haml:43: unterminated regexp meets end of file
+/Users/osiecki/Documents/Tealeaf/BRPQA/TL-flix/app/views/users/new.html.haml:43: syntax error, unexpected end-of-input, expecting keyword_end):
+  actionview (4.1.1) lib/action_view/template.rb:297:in `module_eval'
+  actionview (4.1.1) lib/action_view/template.rb:297:in `compile'
+  actionview (4.1.1) lib/action_view/template.rb:245:in `block (2 levels) in compile!'
+  activesupport (4.1.1) lib/active_support/notifications.rb:161:in `instrument'
+  actionview (4.1.1) lib/action_view/template.rb:339:in `instrument'
+  actionview (4.1.1) lib/action_view/template.rb:244:in `block in compile!'
+  actionview (4.1.1) lib/action_view/template.rb:232:in `synchronize'
+  actionview (4.1.1) lib/action_view/template.rb:232:in `compile!'
+  actionview (4.1.1) lib/action_view/template.rb:144:in `block in render'
+  activesupport (4.1.1) lib/active_support/notifications.rb:161:in `instrument'
+  actionview (4.1.1) lib/action_view/template.rb:339:in `instrument'
+  actionview (4.1.1) lib/action_view/template.rb:143:in `render'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:55:in `block (2 levels) in render_template'
+  actionview (4.1.1) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionview (4.1.1) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:54:in `block in render_template'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:62:in `render_with_layout'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:53:in `render_template'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionview (4.1.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.1) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.1) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.1) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.1) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/osiecki/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.1.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.1) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.1) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/osiecki/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/osiecki/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/osiecki/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/osiecki/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /Users/osiecki/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/osiecki/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/osiecki/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.7ms)
+
+
+Started GET "/register" for 127.0.0.1 at 2014-08-18 10:37:33 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (8.8ms)
+  Rendered shared/_header.html.haml (0.2ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+Completed 200 OK in 19ms (Views: 18.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-18 10:37:33 -0400
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-08-18 10:37:33 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-08-18 10:37:33 -0400
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-08-18 10:37:33 -0400
+
+
+Started GET "/assets/account_and_billing.css?body=1" for 127.0.0.1 at 2014-08-18 10:37:33 -0400
+
+
+Started GET "/assets/genre.css?body=1" for 127.0.0.1 at 2014-08-18 10:37:33 -0400
+
+
+Started GET "/assets/whitespace-reset.css?body=1" for 127.0.0.1 at 2014-08-18 10:37:33 -0400
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-08-18 10:37:33 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-08-18 10:37:33 -0400
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-08-18 10:37:33 -0400
+
+
+Started GET "/assets/public_pages.css?body=1" for 127.0.0.1 at 2014-08-18 10:37:33 -0400
+
+
+Started GET "/assets/invite.css?body=1" for 127.0.0.1 at 2014-08-18 10:37:33 -0400
+
+
+Started GET "/assets/queue.css?body=1" for 127.0.0.1 at 2014-08-18 10:37:33 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-08-18 10:37:33 -0400
+
+
+Started GET "/assets/videos.css?body=1" for 127.0.0.1 at 2014-08-18 10:37:33 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-18 10:37:33 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-18 10:37:33 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-08-18 10:37:33 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-08-18 10:37:33 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-08-18 10:37:33 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-08-18 10:37:33 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-08-18 10:37:33 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-08-18 10:37:33 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-08-18 10:37:33 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-08-18 10:37:33 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-08-18 10:37:33 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-08-18 10:37:33 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-08-18 10:37:34 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-08-18 10:37:34 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-18 10:37:34 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-18 10:37:34 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-18 10:39:15 -0400
+Processing by PagesController#front as HTML
+  Rendered pages/front.html.haml within layouts/application (0.4ms)
+  Rendered shared/_header.html.haml (0.2ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-18 10:39:15 -0400
+
+
+Started GET "/assets/account_and_billing.css?body=1" for 127.0.0.1 at 2014-08-18 10:39:15 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-08-18 10:39:15 -0400
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-08-18 10:39:15 -0400
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-08-18 10:39:15 -0400
+
+
+Started GET "/assets/whitespace-reset.css?body=1" for 127.0.0.1 at 2014-08-18 10:39:15 -0400
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-08-18 10:39:15 -0400
+
+
+Started GET "/assets/genre.css?body=1" for 127.0.0.1 at 2014-08-18 10:39:15 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-08-18 10:39:15 -0400
+
+
+Started GET "/assets/invite.css?body=1" for 127.0.0.1 at 2014-08-18 10:39:15 -0400
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-08-18 10:39:15 -0400
+
+
+Started GET "/assets/queue.css?body=1" for 127.0.0.1 at 2014-08-18 10:39:15 -0400
+
+
+Started GET "/assets/public_pages.css?body=1" for 127.0.0.1 at 2014-08-18 10:39:15 -0400
+
+
+Started GET "/assets/videos.css?body=1" for 127.0.0.1 at 2014-08-18 10:39:15 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-08-18 10:39:15 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-18 10:39:15 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-18 10:39:15 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-08-18 10:39:15 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-08-18 10:39:15 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-08-18 10:39:15 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-08-18 10:39:15 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-08-18 10:39:15 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-08-18 10:39:15 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-08-18 10:39:15 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-08-18 10:39:15 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-08-18 10:39:15 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-08-18 10:39:15 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-08-18 10:39:15 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-08-18 10:39:15 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-18 10:39:15 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-18 10:39:15 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-18 10:39:16 -0400
+Processing by PagesController#front as HTML
+  Rendered pages/front.html.haml within layouts/application (0.2ms)
+  Rendered shared/_header.html.haml (0.2ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/whitespace-reset.css?body=1" for 127.0.0.1 at 2014-08-18 10:39:16 -0400
+
+
+Started GET "/assets/account_and_billing.css?body=1" for 127.0.0.1 at 2014-08-18 10:39:16 -0400
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-08-18 10:39:16 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-18 10:39:16 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-08-18 10:39:16 -0400
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-08-18 10:39:16 -0400
+
+
+Started GET "/assets/genre.css?body=1" for 127.0.0.1 at 2014-08-18 10:39:16 -0400
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-08-18 10:39:16 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-08-18 10:39:16 -0400
+
+
+Started GET "/assets/invite.css?body=1" for 127.0.0.1 at 2014-08-18 10:39:16 -0400
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-08-18 10:39:16 -0400
+
+
+Started GET "/assets/public_pages.css?body=1" for 127.0.0.1 at 2014-08-18 10:39:16 -0400
+
+
+Started GET "/assets/queue.css?body=1" for 127.0.0.1 at 2014-08-18 10:39:16 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-08-18 10:39:16 -0400
+
+
+Started GET "/assets/videos.css?body=1" for 127.0.0.1 at 2014-08-18 10:39:16 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-18 10:39:16 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-18 10:39:16 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-08-18 10:39:16 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-08-18 10:39:16 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-08-18 10:39:16 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-08-18 10:39:16 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-08-18 10:39:16 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-08-18 10:39:16 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-08-18 10:39:16 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-08-18 10:39:16 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-08-18 10:39:16 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-08-18 10:39:16 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-08-18 10:39:16 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-08-18 10:39:16 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-18 10:39:16 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-18 10:39:16 -0400
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2014-08-18 10:39:18 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    15: %section.register.container
+    16:   .row
+    17:     .col-sm-10.col-sm-offset-1
+    18:       = bootstrap_form_for @user, html: { class: "form-horizontal"} do |f|
+    19:         %header
+    20:           %h1 Register
+    21:         %fieldset
+  app/views/sessions/new.html.haml:18:in `_app_views_sessions_new_html_haml__4291544811004327834_2159763820'
+
+
+  Rendered /Users/osiecki/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/osiecki/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/osiecki/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (7.8ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2014-08-18 10:40:43 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (8.7ms)
+  Rendered shared/_header.html.haml (0.1ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+Completed 200 OK in 19ms (Views: 18.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-18 10:40:43 -0400
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-08-18 10:40:43 -0400
+
+
+Started GET "/assets/whitespace-reset.css?body=1" for 127.0.0.1 at 2014-08-18 10:40:43 -0400
+
+
+Started GET "/assets/account_and_billing.css?body=1" for 127.0.0.1 at 2014-08-18 10:40:43 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-08-18 10:40:43 -0400
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-08-18 10:40:43 -0400
+
+
+Started GET "/assets/genre.css?body=1" for 127.0.0.1 at 2014-08-18 10:40:43 -0400
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-08-18 10:40:43 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-08-18 10:40:43 -0400
+
+
+Started GET "/assets/invite.css?body=1" for 127.0.0.1 at 2014-08-18 10:40:43 -0400
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-08-18 10:40:43 -0400
+
+
+Started GET "/assets/public_pages.css?body=1" for 127.0.0.1 at 2014-08-18 10:40:43 -0400
+
+
+Started GET "/assets/queue.css?body=1" for 127.0.0.1 at 2014-08-18 10:40:43 -0400
+
+
+Started GET "/assets/videos.css?body=1" for 127.0.0.1 at 2014-08-18 10:40:43 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-08-18 10:40:43 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-18 10:40:43 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-08-18 10:40:43 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-18 10:40:43 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-08-18 10:40:43 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-08-18 10:40:43 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-08-18 10:40:43 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-08-18 10:40:43 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-08-18 10:40:43 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-08-18 10:40:43 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-08-18 10:40:43 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-08-18 10:40:43 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-08-18 10:40:43 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-08-18 10:40:43 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-08-18 10:40:43 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-18 10:40:43 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-18 10:40:43 -0400
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2014-08-18 10:41:42 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (2.7ms)
+  Rendered shared/_header.html.haml (0.2ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/account_and_billing.css?body=1" for 127.0.0.1 at 2014-08-18 10:41:42 -0400
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-08-18 10:41:42 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-18 10:41:42 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-08-18 10:41:42 -0400
+
+
+Started GET "/assets/whitespace-reset.css?body=1" for 127.0.0.1 at 2014-08-18 10:41:42 -0400
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-08-18 10:41:42 -0400
+
+
+Started GET "/assets/genre.css?body=1" for 127.0.0.1 at 2014-08-18 10:41:42 -0400
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-08-18 10:41:42 -0400
+
+
+Started GET "/assets/invite.css?body=1" for 127.0.0.1 at 2014-08-18 10:41:42 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-08-18 10:41:42 -0400
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-08-18 10:41:42 -0400
+
+
+Started GET "/assets/public_pages.css?body=1" for 127.0.0.1 at 2014-08-18 10:41:42 -0400
+
+
+Started GET "/assets/queue.css?body=1" for 127.0.0.1 at 2014-08-18 10:41:42 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-08-18 10:41:42 -0400
+
+
+Started GET "/assets/videos.css?body=1" for 127.0.0.1 at 2014-08-18 10:41:42 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-18 10:41:42 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-18 10:41:42 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-08-18 10:41:42 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-08-18 10:41:42 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-08-18 10:41:42 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-08-18 10:41:42 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-08-18 10:41:42 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-08-18 10:41:42 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-08-18 10:41:42 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-08-18 10:41:42 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-08-18 10:41:42 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-08-18 10:41:42 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-08-18 10:41:42 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-08-18 10:41:42 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-18 10:41:42 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-18 10:41:42 -0400
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2014-08-18 10:41:48 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (0.7ms)
+  Rendered shared/_header.html.haml (0.2ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-18 10:41:48 -0400
+
+
+Started GET "/assets/account_and_billing.css?body=1" for 127.0.0.1 at 2014-08-18 10:41:48 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-08-18 10:41:48 -0400
+
+
+Started GET "/assets/whitespace-reset.css?body=1" for 127.0.0.1 at 2014-08-18 10:41:48 -0400
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-08-18 10:41:48 -0400
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-08-18 10:41:49 -0400
+
+
+Started GET "/assets/genre.css?body=1" for 127.0.0.1 at 2014-08-18 10:41:49 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-08-18 10:41:49 -0400
+
+
+Started GET "/assets/invite.css?body=1" for 127.0.0.1 at 2014-08-18 10:41:49 -0400
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-08-18 10:41:49 -0400
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-08-18 10:41:49 -0400
+
+
+Started GET "/assets/public_pages.css?body=1" for 127.0.0.1 at 2014-08-18 10:41:49 -0400
+
+
+Started GET "/assets/queue.css?body=1" for 127.0.0.1 at 2014-08-18 10:41:49 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-08-18 10:41:49 -0400
+
+
+Started GET "/assets/videos.css?body=1" for 127.0.0.1 at 2014-08-18 10:41:49 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-18 10:41:49 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-18 10:41:49 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-08-18 10:41:49 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-08-18 10:41:49 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-08-18 10:41:49 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-08-18 10:41:49 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-08-18 10:41:49 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-08-18 10:41:49 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-08-18 10:41:49 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-08-18 10:41:49 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-08-18 10:41:49 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-08-18 10:41:49 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-08-18 10:41:49 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-08-18 10:41:49 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-18 10:41:49 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-18 10:41:49 -0400
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2014-08-18 10:42:24 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (3.2ms)
+  Rendered shared/_header.html.haml (0.2ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-18 10:42:24 -0400
+
+
+Started GET "/assets/whitespace-reset.css?body=1" for 127.0.0.1 at 2014-08-18 10:42:24 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-08-18 10:42:24 -0400
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-08-18 10:42:24 -0400
+
+
+Started GET "/assets/genre.css?body=1" for 127.0.0.1 at 2014-08-18 10:42:24 -0400
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-08-18 10:42:24 -0400
+
+
+Started GET "/assets/account_and_billing.css?body=1" for 127.0.0.1 at 2014-08-18 10:42:24 -0400
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-08-18 10:42:24 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-08-18 10:42:24 -0400
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-08-18 10:42:24 -0400
+
+
+Started GET "/assets/invite.css?body=1" for 127.0.0.1 at 2014-08-18 10:42:24 -0400
+
+
+Started GET "/assets/public_pages.css?body=1" for 127.0.0.1 at 2014-08-18 10:42:24 -0400
+
+
+Started GET "/assets/queue.css?body=1" for 127.0.0.1 at 2014-08-18 10:42:24 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-08-18 10:42:24 -0400
+
+
+Started GET "/assets/videos.css?body=1" for 127.0.0.1 at 2014-08-18 10:42:24 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-18 10:42:24 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-18 10:42:24 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-08-18 10:42:24 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-08-18 10:42:24 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-08-18 10:42:24 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-08-18 10:42:24 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-08-18 10:42:24 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-08-18 10:42:24 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-08-18 10:42:24 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-08-18 10:42:24 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-08-18 10:42:24 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-08-18 10:42:24 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-08-18 10:42:24 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-08-18 10:42:24 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-18 10:42:24 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-18 10:42:24 -0400
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2014-08-18 10:42:26 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (0.8ms)
+  Rendered shared/_header.html.haml (0.2ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+Completed 200 OK in 11ms (Views: 10.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-18 10:42:26 -0400
+
+
+Started GET "/assets/whitespace-reset.css?body=1" for 127.0.0.1 at 2014-08-18 10:42:26 -0400
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-08-18 10:42:26 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-08-18 10:42:26 -0400
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-08-18 10:42:26 -0400
+
+
+Started GET "/assets/account_and_billing.css?body=1" for 127.0.0.1 at 2014-08-18 10:42:26 -0400
+
+
+Started GET "/assets/genre.css?body=1" for 127.0.0.1 at 2014-08-18 10:42:26 -0400
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-08-18 10:42:26 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-08-18 10:42:26 -0400
+
+
+Started GET "/assets/invite.css?body=1" for 127.0.0.1 at 2014-08-18 10:42:26 -0400
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-08-18 10:42:26 -0400
+
+
+Started GET "/assets/public_pages.css?body=1" for 127.0.0.1 at 2014-08-18 10:42:26 -0400
+
+
+Started GET "/assets/queue.css?body=1" for 127.0.0.1 at 2014-08-18 10:42:26 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-08-18 10:42:26 -0400
+
+
+Started GET "/assets/videos.css?body=1" for 127.0.0.1 at 2014-08-18 10:42:26 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-18 10:42:26 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-18 10:42:26 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-08-18 10:42:26 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-08-18 10:42:26 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-08-18 10:42:26 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-08-18 10:42:26 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-08-18 10:42:26 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-08-18 10:42:26 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-08-18 10:42:26 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-08-18 10:42:26 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-08-18 10:42:26 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-08-18 10:42:26 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-08-18 10:42:26 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-08-18 10:42:26 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-18 10:42:26 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-18 10:42:26 -0400
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2014-08-18 10:42:46 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (3.1ms)
+  Rendered shared/_header.html.haml (0.2ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+Completed 200 OK in 14ms (Views: 13.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-18 10:42:46 -0400
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-08-18 10:42:46 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-08-18 10:42:46 -0400
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-08-18 10:42:46 -0400
+
+
+Started GET "/assets/account_and_billing.css?body=1" for 127.0.0.1 at 2014-08-18 10:42:46 -0400
+
+
+Started GET "/assets/genre.css?body=1" for 127.0.0.1 at 2014-08-18 10:42:46 -0400
+
+
+Started GET "/assets/whitespace-reset.css?body=1" for 127.0.0.1 at 2014-08-18 10:42:46 -0400
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-08-18 10:42:46 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-08-18 10:42:46 -0400
+
+
+Started GET "/assets/invite.css?body=1" for 127.0.0.1 at 2014-08-18 10:42:46 -0400
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-08-18 10:42:46 -0400
+
+
+Started GET "/assets/public_pages.css?body=1" for 127.0.0.1 at 2014-08-18 10:42:46 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-08-18 10:42:46 -0400
+
+
+Started GET "/assets/queue.css?body=1" for 127.0.0.1 at 2014-08-18 10:42:46 -0400
+
+
+Started GET "/assets/videos.css?body=1" for 127.0.0.1 at 2014-08-18 10:42:46 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-18 10:42:46 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-18 10:42:46 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-08-18 10:42:46 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-08-18 10:42:46 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-08-18 10:42:46 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-08-18 10:42:46 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-08-18 10:42:46 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-08-18 10:42:46 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-08-18 10:42:46 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-08-18 10:42:46 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-08-18 10:42:46 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-08-18 10:42:46 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-08-18 10:42:46 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-18 10:42:46 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-18 10:42:46 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-08-18 10:42:46 -0400
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2014-08-18 10:43:26 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (3.6ms)
+  Rendered shared/_header.html.haml (0.1ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+Completed 200 OK in 14ms (Views: 13.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:26 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:26 -0400
+
+
+Started GET "/assets/whitespace-reset.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:26 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:26 -0400
+
+
+Started GET "/assets/account_and_billing.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:26 -0400
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:26 -0400
+
+
+Started GET "/assets/genre.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:26 -0400
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:26 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:26 -0400
+
+
+Started GET "/assets/invite.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:26 -0400
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:26 -0400
+
+
+Started GET "/assets/public_pages.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:26 -0400
+
+
+Started GET "/assets/queue.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:26 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:26 -0400
+
+
+Started GET "/assets/videos.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:26 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:26 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:26 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:26 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:26 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:26 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:26 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:26 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:26 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:26 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:26 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:26 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:26 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:26 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:26 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:26 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:26 -0400
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2014-08-18 10:43:36 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.2ms)
+  Rendered shared/_header.html.haml (0.3ms)
+  Rendered shared/_messages.html.haml (0.2ms)
+Completed 200 OK in 16ms (Views: 15.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/whitespace-reset.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:36 -0400
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:36 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:36 -0400
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:36 -0400
+
+
+Started GET "/assets/account_and_billing.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:36 -0400
+
+
+Started GET "/assets/genre.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:36 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:36 -0400
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:36 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:36 -0400
+
+
+Started GET "/assets/invite.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:36 -0400
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:36 -0400
+
+
+Started GET "/assets/public_pages.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:36 -0400
+
+
+Started GET "/assets/queue.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:36 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:36 -0400
+
+
+Started GET "/assets/videos.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:36 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:36 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:36 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:36 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:36 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:36 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:36 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:36 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:36 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:36 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:36 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:36 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:36 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:36 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:36 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:36 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:36 -0400
+
+
+Started GET "/register" for 127.0.0.1 at 2014-08-18 10:43:39 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (5.0ms)
+  Rendered shared/_header.html.haml (0.3ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+Completed 200 OK in 15ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:39 -0400
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:39 -0400
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:39 -0400
+
+
+Started GET "/assets/whitespace-reset.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:39 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:39 -0400
+
+
+Started GET "/assets/account_and_billing.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:39 -0400
+
+
+Started GET "/assets/genre.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:39 -0400
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:39 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:39 -0400
+
+
+Started GET "/assets/invite.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:39 -0400
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:39 -0400
+
+
+Started GET "/assets/queue.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:39 -0400
+
+
+Started GET "/assets/public_pages.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:39 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:39 -0400
+
+
+Started GET "/assets/videos.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:39 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:39 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:39 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:39 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:39 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:39 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:39 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:39 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:39 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:39 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:39 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:39 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:39 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:39 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:39 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:39 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:39 -0400
+
+
+Started GET "/register" for 127.0.0.1 at 2014-08-18 10:43:49 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (5.8ms)
+  Rendered shared/_header.html.haml (0.2ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+Completed 200 OK in 16ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:49 -0400
+
+
+Started GET "/assets/whitespace-reset.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:49 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:49 -0400
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:49 -0400
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:49 -0400
+
+
+Started GET "/assets/genre.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:49 -0400
+
+
+Started GET "/assets/account_and_billing.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:49 -0400
+
+
+Started GET "/assets/invite.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:49 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:49 -0400
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:49 -0400
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:49 -0400
+
+
+Started GET "/assets/public_pages.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:49 -0400
+
+
+Started GET "/assets/queue.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:49 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:49 -0400
+
+
+Started GET "/assets/videos.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:49 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:49 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:49 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:49 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:49 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:49 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:49 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:49 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:49 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:49 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:49 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:49 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:49 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:49 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:49 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:49 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:49 -0400
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2014-08-18 10:43:54 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (0.7ms)
+  Rendered shared/_header.html.haml (0.3ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:54 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:54 -0400
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:54 -0400
+
+
+Started GET "/assets/genre.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:54 -0400
+
+
+Started GET "/assets/account_and_billing.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:54 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:54 -0400
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:54 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:54 -0400
+
+
+Started GET "/assets/invite.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:54 -0400
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:54 -0400
+
+
+Started GET "/assets/public_pages.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:54 -0400
+
+
+Started GET "/assets/queue.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:54 -0400
+
+
+Started GET "/assets/videos.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:54 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:54 -0400
+
+
+Started GET "/assets/whitespace-reset.css?body=1" for 127.0.0.1 at 2014-08-18 10:43:54 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:54 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:54 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:54 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:54 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:54 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:54 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:54 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:54 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:54 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:54 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:54 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:54 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:54 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:54 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:54 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-18 10:43:54 -0400
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2014-08-18 10:45:16 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (3.3ms)
+  Rendered shared/_header.html.haml (0.3ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+Completed 200 OK in 15ms (Views: 14.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-18 10:45:16 -0400
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-08-18 10:45:16 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-08-18 10:45:16 -0400
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-08-18 10:45:16 -0400
+
+
+Started GET "/assets/whitespace-reset.css?body=1" for 127.0.0.1 at 2014-08-18 10:45:16 -0400
+
+
+Started GET "/assets/account_and_billing.css?body=1" for 127.0.0.1 at 2014-08-18 10:45:16 -0400
+
+
+Started GET "/assets/genre.css?body=1" for 127.0.0.1 at 2014-08-18 10:45:16 -0400
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-08-18 10:45:16 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-08-18 10:45:16 -0400
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-08-18 10:45:16 -0400
+
+
+Started GET "/assets/invite.css?body=1" for 127.0.0.1 at 2014-08-18 10:45:16 -0400
+
+
+Started GET "/assets/public_pages.css?body=1" for 127.0.0.1 at 2014-08-18 10:45:16 -0400
+
+
+Started GET "/assets/queue.css?body=1" for 127.0.0.1 at 2014-08-18 10:45:16 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-08-18 10:45:16 -0400
+
+
+Started GET "/assets/videos.css?body=1" for 127.0.0.1 at 2014-08-18 10:45:16 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-18 10:45:16 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-08-18 10:45:16 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-18 10:45:16 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-08-18 10:45:16 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-08-18 10:45:16 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-08-18 10:45:16 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-08-18 10:45:16 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-08-18 10:45:16 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-08-18 10:45:16 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-08-18 10:45:16 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-08-18 10:45:16 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-08-18 10:45:16 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-08-18 10:45:16 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-08-18 10:45:16 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-18 10:45:16 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-18 10:45:16 -0400
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2014-08-18 10:46:00 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (0.8ms)
+  Rendered shared/_header.html.haml (0.1ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-18 10:46:00 -0400
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-08-18 10:46:00 -0400
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-08-18 10:46:00 -0400
+
+
+Started GET "/assets/whitespace-reset.css?body=1" for 127.0.0.1 at 2014-08-18 10:46:00 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-08-18 10:46:00 -0400
+
+
+Started GET "/assets/account_and_billing.css?body=1" for 127.0.0.1 at 2014-08-18 10:46:00 -0400
+
+
+Started GET "/assets/genre.css?body=1" for 127.0.0.1 at 2014-08-18 10:46:00 -0400
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-08-18 10:46:00 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-08-18 10:46:00 -0400
+
+
+Started GET "/assets/invite.css?body=1" for 127.0.0.1 at 2014-08-18 10:46:00 -0400
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-08-18 10:46:00 -0400
+
+
+Started GET "/assets/public_pages.css?body=1" for 127.0.0.1 at 2014-08-18 10:46:00 -0400
+
+
+Started GET "/assets/queue.css?body=1" for 127.0.0.1 at 2014-08-18 10:46:00 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-08-18 10:46:00 -0400
+
+
+Started GET "/assets/videos.css?body=1" for 127.0.0.1 at 2014-08-18 10:46:00 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-18 10:46:00 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-18 10:46:00 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-08-18 10:46:00 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-08-18 10:46:00 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-08-18 10:46:00 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-08-18 10:46:00 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-08-18 10:46:00 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-08-18 10:46:00 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-08-18 10:46:00 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-08-18 10:46:00 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-08-18 10:46:00 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-08-18 10:46:00 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-08-18 10:46:00 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-18 10:46:00 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-08-18 10:46:00 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-18 10:46:00 -0400
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2014-08-18 10:46:31 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (2.7ms)
+  Rendered shared/_header.html.haml (0.1ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+Completed 200 OK in 13ms (Views: 12.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-18 10:46:31 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-08-18 10:46:31 -0400
+
+
+Started GET "/assets/whitespace-reset.css?body=1" for 127.0.0.1 at 2014-08-18 10:46:31 -0400
+
+
+Started GET "/assets/genre.css?body=1" for 127.0.0.1 at 2014-08-18 10:46:31 -0400
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-08-18 10:46:31 -0400
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-08-18 10:46:31 -0400
+
+
+Started GET "/assets/account_and_billing.css?body=1" for 127.0.0.1 at 2014-08-18 10:46:31 -0400
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-08-18 10:46:31 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-08-18 10:46:31 -0400
+
+
+Started GET "/assets/invite.css?body=1" for 127.0.0.1 at 2014-08-18 10:46:31 -0400
+
+
+Started GET "/assets/public_pages.css?body=1" for 127.0.0.1 at 2014-08-18 10:46:31 -0400
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-08-18 10:46:31 -0400
+
+
+Started GET "/assets/queue.css?body=1" for 127.0.0.1 at 2014-08-18 10:46:31 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-08-18 10:46:31 -0400
+
+
+Started GET "/assets/videos.css?body=1" for 127.0.0.1 at 2014-08-18 10:46:31 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-18 10:46:31 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-08-18 10:46:31 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-18 10:46:31 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-08-18 10:46:31 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-08-18 10:46:31 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-08-18 10:46:31 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-08-18 10:46:31 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-08-18 10:46:31 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-08-18 10:46:31 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-08-18 10:46:31 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-08-18 10:46:31 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-08-18 10:46:31 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-08-18 10:46:31 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-08-18 10:46:31 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-18 10:46:31 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-18 10:46:31 -0400
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2014-08-18 10:47:19 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (3.6ms)
+  Rendered shared/_header.html.haml (0.2ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-18 10:47:19 -0400
+
+
+Started GET "/assets/account_and_billing.css?body=1" for 127.0.0.1 at 2014-08-18 10:47:19 -0400
+
+
+Started GET "/assets/whitespace-reset.css?body=1" for 127.0.0.1 at 2014-08-18 10:47:19 -0400
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-08-18 10:47:19 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-08-18 10:47:19 -0400
+
+
+Started GET "/assets/genre.css?body=1" for 127.0.0.1 at 2014-08-18 10:47:19 -0400
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-08-18 10:47:19 -0400
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-08-18 10:47:19 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-08-18 10:47:19 -0400
+
+
+Started GET "/assets/invite.css?body=1" for 127.0.0.1 at 2014-08-18 10:47:19 -0400
+
+
+Started GET "/assets/public_pages.css?body=1" for 127.0.0.1 at 2014-08-18 10:47:19 -0400
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-08-18 10:47:19 -0400
+
+
+Started GET "/assets/queue.css?body=1" for 127.0.0.1 at 2014-08-18 10:47:19 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-08-18 10:47:19 -0400
+
+
+Started GET "/assets/videos.css?body=1" for 127.0.0.1 at 2014-08-18 10:47:19 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-18 10:47:19 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-18 10:47:19 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-08-18 10:47:19 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-08-18 10:47:19 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-08-18 10:47:19 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-08-18 10:47:19 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-08-18 10:47:19 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-08-18 10:47:19 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-08-18 10:47:19 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-08-18 10:47:19 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-08-18 10:47:19 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-08-18 10:47:19 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-08-18 10:47:19 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-08-18 10:47:19 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-18 10:47:19 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-18 10:47:19 -0400
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2014-08-18 10:47:54 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (2.9ms)
+  Rendered shared/_header.html.haml (0.2ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-18 10:47:54 -0400
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-08-18 10:47:54 -0400
+
+
+Started GET "/assets/whitespace-reset.css?body=1" for 127.0.0.1 at 2014-08-18 10:47:54 -0400
+
+
+Started GET "/assets/account_and_billing.css?body=1" for 127.0.0.1 at 2014-08-18 10:47:54 -0400
+
+
+Started GET "/assets/genre.css?body=1" for 127.0.0.1 at 2014-08-18 10:47:54 -0400
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-08-18 10:47:54 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-08-18 10:47:54 -0400
+
+
+Started GET "/assets/invite.css?body=1" for 127.0.0.1 at 2014-08-18 10:47:54 -0400
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-08-18 10:47:54 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-08-18 10:47:54 -0400
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-08-18 10:47:54 -0400
+
+
+Started GET "/assets/public_pages.css?body=1" for 127.0.0.1 at 2014-08-18 10:47:54 -0400
+
+
+Started GET "/assets/queue.css?body=1" for 127.0.0.1 at 2014-08-18 10:47:54 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-08-18 10:47:54 -0400
+
+
+Started GET "/assets/videos.css?body=1" for 127.0.0.1 at 2014-08-18 10:47:54 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-18 10:47:54 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-18 10:47:54 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-08-18 10:47:54 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-08-18 10:47:54 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-08-18 10:47:54 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-08-18 10:47:54 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-08-18 10:47:54 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-08-18 10:47:54 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-08-18 10:47:54 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-08-18 10:47:54 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-08-18 10:47:54 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-08-18 10:47:54 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-08-18 10:47:54 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-08-18 10:47:54 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-18 10:47:54 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-18 10:47:54 -0400
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2014-08-18 10:48:19 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (3.0ms)
+  Rendered shared/_header.html.haml (0.2ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+Completed 200 OK in 13ms (Views: 12.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-18 10:48:19 -0400
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-08-18 10:48:19 -0400
+
+
+Started GET "/assets/account_and_billing.css?body=1" for 127.0.0.1 at 2014-08-18 10:48:19 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-08-18 10:48:19 -0400
+
+
+Started GET "/assets/whitespace-reset.css?body=1" for 127.0.0.1 at 2014-08-18 10:48:19 -0400
+
+
+Started GET "/assets/genre.css?body=1" for 127.0.0.1 at 2014-08-18 10:48:19 -0400
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-08-18 10:48:19 -0400
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-08-18 10:48:19 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-08-18 10:48:19 -0400
+
+
+Started GET "/assets/invite.css?body=1" for 127.0.0.1 at 2014-08-18 10:48:19 -0400
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-08-18 10:48:19 -0400
+
+
+Started GET "/assets/public_pages.css?body=1" for 127.0.0.1 at 2014-08-18 10:48:19 -0400
+
+
+Started GET "/assets/queue.css?body=1" for 127.0.0.1 at 2014-08-18 10:48:19 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-08-18 10:48:19 -0400
+
+
+Started GET "/assets/videos.css?body=1" for 127.0.0.1 at 2014-08-18 10:48:19 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-18 10:48:19 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-18 10:48:19 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-08-18 10:48:19 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-08-18 10:48:19 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-08-18 10:48:19 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-08-18 10:48:19 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-08-18 10:48:19 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-08-18 10:48:19 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-08-18 10:48:19 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-08-18 10:48:19 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-08-18 10:48:19 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-08-18 10:48:19 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-08-18 10:48:19 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-08-18 10:48:19 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-18 10:48:19 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-18 10:48:19 -0400

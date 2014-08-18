@@ -19,6 +19,6 @@ Myflix::Application.configure do
   config.active_support.deprecation = :notify
 
   DATABASE_OPERATOR = {
-    like_operator: 'LIKE'
+    like_operator: 'ILIKE'
   }
 end
