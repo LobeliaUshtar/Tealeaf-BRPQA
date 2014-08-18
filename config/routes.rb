@@ -9,7 +9,7 @@ Myflix::Application.routes.draw do
     end
   end
   resources :users, only: [:create]
-  resources :sessions, only: [:create, :destroy]
+  resources :sessions, only: [:create]
   resources :categories
 
    get 'ui(/:action)', controller: 'ui'
