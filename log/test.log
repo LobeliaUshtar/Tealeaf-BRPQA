@@ -5968,3 +5968,1280 @@ Binary data inserted for `string` type on column `password_digest`
   [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
   [1m[35mVideo Load (0.1ms)[0m  SELECT "videos".* FROM "videos"  WHERE (title LIKE '%Dragnet%')  ORDER BY created_at DESC
   [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-08-19 13:09:16.230739"], ["name", "comedy"], ["updated_at", "2014-08-19 13:09:16.230739"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2014-08-19 13:09:16.246943"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:09:16.246943"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["category_id", 1], ["created_at", "2014-08-19 13:09:16.249985"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:09:16.249985"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2014-08-19 13:09:16.251316"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:09:16.251316"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["category_id", 1], ["created_at", "2014-08-19 13:09:16.252883"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:09:16.252883"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2014-08-19 13:09:16.254327"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:09:16.254327"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["category_id", 1], ["created_at", "2014-08-19 13:09:16.255284"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:09:16.255284"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2014-08-18 13:09:16.255825"], ["description", "show"], ["title", "the_tonight_show"], ["updated_at", "2014-08-19 13:09:16.256309"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mVideo Load (0.3ms)[0m  [1mSELECT  "videos".* FROM "videos"  WHERE "videos"."category_id" = ?  ORDER BY created_at DESC LIMIT 6[0m  [["category_id", 1]]
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-08-19 13:09:16.267848"], ["name", "comedy"], ["updated_at", "2014-08-19 13:09:16.267848"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["category_id", 1], ["created_at", "2014-08-18 13:09:16.268695"], ["description", "space"], ["title", "Futurama"], ["updated_at", "2014-08-19 13:09:16.269154"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2014-08-19 13:09:16.270055"], ["description", "wierd"], ["title", "South Park"], ["updated_at", "2014-08-19 13:09:16.270055"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mVideo Load (0.1ms)[0m  [1mSELECT  "videos".* FROM "videos"  WHERE "videos"."category_id" = ?  ORDER BY created_at DESC LIMIT 6[0m  [["category_id", 1]]
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-08-19 13:09:16.273456"], ["name", "comedy"], ["updated_at", "2014-08-19 13:09:16.273456"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["category_id", 1], ["created_at", "2014-08-19 13:09:16.274607"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:09:16.274607"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2014-08-19 13:09:16.275500"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:09:16.275500"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["category_id", 1], ["created_at", "2014-08-19 13:09:16.276237"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:09:16.276237"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2014-08-19 13:09:16.276962"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:09:16.276962"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["category_id", 1], ["created_at", "2014-08-19 13:09:16.277944"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:09:16.277944"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2014-08-19 13:09:16.279227"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:09:16.279227"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["category_id", 1], ["created_at", "2014-08-19 13:09:16.280611"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:09:16.280611"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mVideo Load (0.2ms)[0m  SELECT  "videos".* FROM "videos"  WHERE "videos"."category_id" = ?  ORDER BY created_at DESC LIMIT 6  [["category_id", 1]]
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-08-19 13:09:16.284773"], ["name", "comedy"], ["updated_at", "2014-08-19 13:09:16.284773"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mVideo Load (0.1ms)[0m  SELECT  "videos".* FROM "videos"  WHERE "videos"."category_id" = ?  ORDER BY created_at DESC LIMIT 6  [["category_id", 1]]
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-08-19 13:09:16.288638"], ["name", "comedy"], ["updated_at", "2014-08-19 13:09:16.288638"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2014-08-18 13:09:16.289446"], ["description", "space"], ["title", "Futurama"], ["updated_at", "2014-08-19 13:09:16.290007"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["category_id", 1], ["created_at", "2014-08-19 13:09:16.291136"], ["description", "wierd"], ["title", "South Park"], ["updated_at", "2014-08-19 13:09:16.291136"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mVideo Load (0.1ms)[0m  SELECT  "videos".* FROM "videos"  WHERE "videos"."category_id" = ?  ORDER BY created_at DESC LIMIT 6  [["category_id", 1]]
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"   ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "password_digest", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-08-19 13:09:16.336012"], ["email", "a"], ["password_digest", "$2a$04$nK7suuDLR4KrtLLMiTtHyO2NVGKuvkq01QJ6dufPCmBWD0u/QHx1K"], ["updated_at", "2014-08-19 13:09:16.336012"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'a' LIMIT 1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'a' LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-08-18 13:09:16.352663"], ["description", "cops"], ["title", "Dragnet"], ["updated_at", "2014-08-19 13:09:16.353131"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-08-19 13:09:16.354218"], ["description", "western"], ["title", "Maverick"], ["updated_at", "2014-08-19 13:09:16.354218"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mVideo Load (0.1ms)[0m  [1mSELECT "videos".* FROM "videos"  WHERE (title LIKE '%e%')  ORDER BY created_at DESC[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-08-18 13:09:16.356573"], ["description", "cops"], ["title", "Dragnet"], ["updated_at", "2014-08-19 13:09:16.357082"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-08-19 13:09:16.358441"], ["description", "western"], ["title", "Maverick"], ["updated_at", "2014-08-19 13:09:16.358441"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mVideo Load (0.1ms)[0m  SELECT "videos".* FROM "videos"  WHERE (title LIKE '%hello%')  ORDER BY created_at DESC
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-08-18 13:09:16.361349"], ["description", "cops"], ["title", "Dragnet"], ["updated_at", "2014-08-19 13:09:16.362036"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-08-19 13:09:16.363563"], ["description", "western"], ["title", "Maverick"], ["updated_at", "2014-08-19 13:09:16.363563"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mVideo Load (0.1ms)[0m  [1mSELECT "videos".* FROM "videos"  WHERE (title LIKE '%veri%')  ORDER BY created_at DESC[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-08-18 13:09:16.366747"], ["description", "cops"], ["title", "Dragnet"], ["updated_at", "2014-08-19 13:09:16.367240"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-08-19 13:09:16.368359"], ["description", "western"], ["title", "Maverick"], ["updated_at", "2014-08-19 13:09:16.368359"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-08-18 13:09:16.370542"], ["description", "cops"], ["title", "Dragnet"], ["updated_at", "2014-08-19 13:09:16.371472"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-08-19 13:09:16.373013"], ["description", "western"], ["title", "Maverick"], ["updated_at", "2014-08-19 13:09:16.373013"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mVideo Load (0.1ms)[0m  SELECT "videos".* FROM "videos"  WHERE (title LIKE '%Dragnet%')  ORDER BY created_at DESC
+  [1m[36m (1.3ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-08-19 13:20:06.402649"], ["name", "comedy"], ["updated_at", "2014-08-19 13:20:06.402649"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2014-08-19 13:20:06.411252"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:20:06.411252"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["category_id", 1], ["created_at", "2014-08-19 13:20:06.413321"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:20:06.413321"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2014-08-19 13:20:06.414217"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:20:06.414217"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["category_id", 1], ["created_at", "2014-08-19 13:20:06.414952"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:20:06.414952"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2014-08-19 13:20:06.415729"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:20:06.415729"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["category_id", 1], ["created_at", "2014-08-19 13:20:06.416791"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:20:06.416791"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2014-08-18 13:20:06.417297"], ["description", "show"], ["title", "the_tonight_show"], ["updated_at", "2014-08-19 13:20:06.417688"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mVideo Load (0.3ms)[0m  [1mSELECT  "videos".* FROM "videos"  WHERE "videos"."category_id" = ?  ORDER BY created_at DESC LIMIT 6[0m  [["category_id", 1]]
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-08-19 13:20:06.426873"], ["name", "comedy"], ["updated_at", "2014-08-19 13:20:06.426873"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["category_id", 1], ["created_at", "2014-08-18 13:20:06.428145"], ["description", "space"], ["title", "Futurama"], ["updated_at", "2014-08-19 13:20:06.428939"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2014-08-19 13:20:06.430626"], ["description", "wierd"], ["title", "South Park"], ["updated_at", "2014-08-19 13:20:06.430626"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mVideo Load (0.2ms)[0m  [1mSELECT  "videos".* FROM "videos"  WHERE "videos"."category_id" = ?  ORDER BY created_at DESC LIMIT 6[0m  [["category_id", 1]]
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-08-19 13:20:06.435781"], ["name", "comedy"], ["updated_at", "2014-08-19 13:20:06.435781"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["category_id", 1], ["created_at", "2014-08-19 13:20:06.437857"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:20:06.437857"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2014-08-19 13:20:06.439153"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:20:06.439153"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["category_id", 1], ["created_at", "2014-08-19 13:20:06.440131"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:20:06.440131"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2014-08-19 13:20:06.441057"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:20:06.441057"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["category_id", 1], ["created_at", "2014-08-19 13:20:06.441990"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:20:06.441990"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2014-08-19 13:20:06.442820"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:20:06.442820"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["category_id", 1], ["created_at", "2014-08-19 13:20:06.443725"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:20:06.443725"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mVideo Load (0.1ms)[0m  SELECT  "videos".* FROM "videos"  WHERE "videos"."category_id" = ?  ORDER BY created_at DESC LIMIT 6  [["category_id", 1]]
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-08-19 13:20:06.446462"], ["name", "comedy"], ["updated_at", "2014-08-19 13:20:06.446462"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mVideo Load (0.2ms)[0m  SELECT  "videos".* FROM "videos"  WHERE "videos"."category_id" = ?  ORDER BY created_at DESC LIMIT 6  [["category_id", 1]]
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-08-19 13:20:06.450711"], ["name", "comedy"], ["updated_at", "2014-08-19 13:20:06.450711"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2014-08-18 13:20:06.452354"], ["description", "space"], ["title", "Futurama"], ["updated_at", "2014-08-19 13:20:06.453301"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["category_id", 1], ["created_at", "2014-08-19 13:20:06.454995"], ["description", "wierd"], ["title", "South Park"], ["updated_at", "2014-08-19 13:20:06.454995"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mVideo Load (0.1ms)[0m  SELECT  "videos".* FROM "videos"  WHERE "videos"."category_id" = ?  ORDER BY created_at DESC LIMIT 6  [["category_id", 1]]
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"   ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "password_digest", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-08-19 13:20:06.710374"], ["email", "a"], ["password_digest", "$2a$04$JeW2wkOZx..ShieAV2t/r.OKI/JtF1RTt/wl.i7nXRD4D2m7PrHsG"], ["updated_at", "2014-08-19 13:20:06.710374"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'a' LIMIT 1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'a' LIMIT 1
+  [1m[36m (8.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-08-18 13:20:06.751834"], ["description", "cops"], ["title", "Dragnet"], ["updated_at", "2014-08-19 13:20:06.752508"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-08-19 13:20:06.753840"], ["description", "western"], ["title", "Maverick"], ["updated_at", "2014-08-19 13:20:06.753840"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mVideo Load (0.1ms)[0m  [1mSELECT "videos".* FROM "videos"  WHERE (title LIKE '%e%')  ORDER BY created_at DESC[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-08-18 13:20:06.755964"], ["description", "cops"], ["title", "Dragnet"], ["updated_at", "2014-08-19 13:20:06.756444"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-08-19 13:20:06.757425"], ["description", "western"], ["title", "Maverick"], ["updated_at", "2014-08-19 13:20:06.757425"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mVideo Load (0.1ms)[0m  SELECT "videos".* FROM "videos"  WHERE (title LIKE '%hello%')  ORDER BY created_at DESC
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-08-18 13:20:06.759203"], ["description", "cops"], ["title", "Dragnet"], ["updated_at", "2014-08-19 13:20:06.759686"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-08-19 13:20:06.760728"], ["description", "western"], ["title", "Maverick"], ["updated_at", "2014-08-19 13:20:06.760728"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mVideo Load (0.1ms)[0m  [1mSELECT "videos".* FROM "videos"  WHERE (title LIKE '%veri%')  ORDER BY created_at DESC[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-08-18 13:20:06.762914"], ["description", "cops"], ["title", "Dragnet"], ["updated_at", "2014-08-19 13:20:06.763401"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-08-19 13:20:06.764527"], ["description", "western"], ["title", "Maverick"], ["updated_at", "2014-08-19 13:20:06.764527"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-08-18 13:20:06.766373"], ["description", "cops"], ["title", "Dragnet"], ["updated_at", "2014-08-19 13:20:06.767031"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-08-19 13:20:06.768314"], ["description", "western"], ["title", "Maverick"], ["updated_at", "2014-08-19 13:20:06.768314"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mVideo Load (0.1ms)[0m  SELECT "videos".* FROM "videos"  WHERE (title LIKE '%Dragnet%')  ORDER BY created_at DESC
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-08-19 13:25:37.194959"], ["name", "comedy"], ["updated_at", "2014-08-19 13:25:37.194959"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2014-08-19 13:25:37.203548"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:25:37.203548"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["category_id", 1], ["created_at", "2014-08-19 13:25:37.205438"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:25:37.205438"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2014-08-19 13:25:37.206224"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:25:37.206224"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["category_id", 1], ["created_at", "2014-08-19 13:25:37.206979"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:25:37.206979"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2014-08-19 13:25:37.207727"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:25:37.207727"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["category_id", 1], ["created_at", "2014-08-19 13:25:37.208770"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:25:37.208770"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2014-08-18 13:25:37.209279"], ["description", "show"], ["title", "the_tonight_show"], ["updated_at", "2014-08-19 13:25:37.209699"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mVideo Load (0.3ms)[0m  [1mSELECT  "videos".* FROM "videos"  WHERE "videos"."category_id" = ?  ORDER BY created_at DESC LIMIT 6[0m  [["category_id", 1]]
+  [1m[35m (8.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-08-19 13:25:37.227366"], ["name", "comedy"], ["updated_at", "2014-08-19 13:25:37.227366"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["category_id", 1], ["created_at", "2014-08-18 13:25:37.228417"], ["description", "space"], ["title", "Futurama"], ["updated_at", "2014-08-19 13:25:37.229378"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2014-08-19 13:25:37.231035"], ["description", "wierd"], ["title", "South Park"], ["updated_at", "2014-08-19 13:25:37.231035"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mVideo Load (0.1ms)[0m  [1mSELECT  "videos".* FROM "videos"  WHERE "videos"."category_id" = ?  ORDER BY created_at DESC LIMIT 6[0m  [["category_id", 1]]
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-08-19 13:25:37.234777"], ["name", "comedy"], ["updated_at", "2014-08-19 13:25:37.234777"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["category_id", 1], ["created_at", "2014-08-19 13:25:37.236292"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:25:37.236292"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2014-08-19 13:25:37.237407"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:25:37.237407"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["category_id", 1], ["created_at", "2014-08-19 13:25:37.238366"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:25:37.238366"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2014-08-19 13:25:37.239240"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:25:37.239240"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["category_id", 1], ["created_at", "2014-08-19 13:25:37.239995"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:25:37.239995"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2014-08-19 13:25:37.240770"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:25:37.240770"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["category_id", 1], ["created_at", "2014-08-19 13:25:37.241678"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:25:37.241678"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mVideo Load (0.1ms)[0m  SELECT  "videos".* FROM "videos"  WHERE "videos"."category_id" = ?  ORDER BY created_at DESC LIMIT 6  [["category_id", 1]]
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-08-19 13:25:37.244504"], ["name", "comedy"], ["updated_at", "2014-08-19 13:25:37.244504"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mVideo Load (0.1ms)[0m  SELECT  "videos".* FROM "videos"  WHERE "videos"."category_id" = ?  ORDER BY created_at DESC LIMIT 6  [["category_id", 1]]
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-08-19 13:25:37.247403"], ["name", "comedy"], ["updated_at", "2014-08-19 13:25:37.247403"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2014-08-18 13:25:37.248653"], ["description", "space"], ["title", "Futurama"], ["updated_at", "2014-08-19 13:25:37.249714"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["category_id", 1], ["created_at", "2014-08-19 13:25:37.251779"], ["description", "wierd"], ["title", "South Park"], ["updated_at", "2014-08-19 13:25:37.251779"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mVideo Load (0.2ms)[0m  SELECT  "videos".* FROM "videos"  WHERE "videos"."category_id" = ?  ORDER BY created_at DESC LIMIT 6  [["category_id", 1]]
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"   ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "password_digest", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-08-19 13:25:37.520922"], ["email", "a"], ["password_digest", "$2a$04$nMBqJ.bOKl/S6umAyVdtT.yBVjR0NNoljcGoFT0hg6WYB.fEWwUPi"], ["updated_at", "2014-08-19 13:25:37.520922"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'a' LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'a' LIMIT 1
+  [1m[36m (7.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-08-18 13:25:37.562972"], ["description", "cops"], ["title", "Dragnet"], ["updated_at", "2014-08-19 13:25:37.563444"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-08-19 13:25:37.564546"], ["description", "western"], ["title", "Maverick"], ["updated_at", "2014-08-19 13:25:37.564546"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mVideo Load (0.1ms)[0m  [1mSELECT "videos".* FROM "videos"  WHERE (title LIKE '%e%')  ORDER BY created_at DESC[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-08-18 13:25:37.566504"], ["description", "cops"], ["title", "Dragnet"], ["updated_at", "2014-08-19 13:25:37.566905"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-08-19 13:25:37.567787"], ["description", "western"], ["title", "Maverick"], ["updated_at", "2014-08-19 13:25:37.567787"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mVideo Load (0.1ms)[0m  SELECT "videos".* FROM "videos"  WHERE (title LIKE '%hello%')  ORDER BY created_at DESC
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-08-18 13:25:37.569454"], ["description", "cops"], ["title", "Dragnet"], ["updated_at", "2014-08-19 13:25:37.569817"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-08-19 13:25:37.570625"], ["description", "western"], ["title", "Maverick"], ["updated_at", "2014-08-19 13:25:37.570625"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mVideo Load (0.1ms)[0m  [1mSELECT "videos".* FROM "videos"  WHERE (title LIKE '%veri%')  ORDER BY created_at DESC[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-08-18 13:25:37.572498"], ["description", "cops"], ["title", "Dragnet"], ["updated_at", "2014-08-19 13:25:37.573116"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-08-19 13:25:37.574087"], ["description", "western"], ["title", "Maverick"], ["updated_at", "2014-08-19 13:25:37.574087"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-08-18 13:25:37.575809"], ["description", "cops"], ["title", "Dragnet"], ["updated_at", "2014-08-19 13:25:37.576497"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-08-19 13:25:37.578176"], ["description", "western"], ["title", "Maverick"], ["updated_at", "2014-08-19 13:25:37.578176"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mVideo Load (0.1ms)[0m  SELECT "videos".* FROM "videos"  WHERE (title LIKE '%Dragnet%')  ORDER BY created_at DESC
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-08-19 13:29:26.531640"], ["name", "comedy"], ["updated_at", "2014-08-19 13:29:26.531640"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2014-08-19 13:29:26.540625"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:29:26.540625"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["category_id", 1], ["created_at", "2014-08-19 13:29:26.542742"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:29:26.542742"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2014-08-19 13:29:26.543734"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:29:26.543734"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["category_id", 1], ["created_at", "2014-08-19 13:29:26.544635"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:29:26.544635"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2014-08-19 13:29:26.545912"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:29:26.545912"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["category_id", 1], ["created_at", "2014-08-19 13:29:26.547421"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:29:26.547421"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2014-08-18 13:29:26.548376"], ["description", "show"], ["title", "the_tonight_show"], ["updated_at", "2014-08-19 13:29:26.549117"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mVideo Load (0.3ms)[0m  [1mSELECT  "videos".* FROM "videos"  WHERE "videos"."category_id" = ?  ORDER BY created_at DESC LIMIT 6[0m  [["category_id", 1]]
+  [1m[35m (8.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-08-19 13:29:26.568764"], ["name", "comedy"], ["updated_at", "2014-08-19 13:29:26.568764"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["category_id", 1], ["created_at", "2014-08-18 13:29:26.570136"], ["description", "space"], ["title", "Futurama"], ["updated_at", "2014-08-19 13:29:26.570945"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2014-08-19 13:29:26.572782"], ["description", "wierd"], ["title", "South Park"], ["updated_at", "2014-08-19 13:29:26.572782"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mVideo Load (0.1ms)[0m  [1mSELECT  "videos".* FROM "videos"  WHERE "videos"."category_id" = ?  ORDER BY created_at DESC LIMIT 6[0m  [["category_id", 1]]
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-08-19 13:29:26.577547"], ["name", "comedy"], ["updated_at", "2014-08-19 13:29:26.577547"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["category_id", 1], ["created_at", "2014-08-19 13:29:26.579054"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:29:26.579054"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2014-08-19 13:29:26.580239"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:29:26.580239"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["category_id", 1], ["created_at", "2014-08-19 13:29:26.581205"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:29:26.581205"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2014-08-19 13:29:26.581962"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:29:26.581962"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["category_id", 1], ["created_at", "2014-08-19 13:29:26.582727"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:29:26.582727"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2014-08-19 13:29:26.583957"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:29:26.583957"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["category_id", 1], ["created_at", "2014-08-19 13:29:26.584689"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:29:26.584689"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mVideo Load (0.1ms)[0m  SELECT  "videos".* FROM "videos"  WHERE "videos"."category_id" = ?  ORDER BY created_at DESC LIMIT 6  [["category_id", 1]]
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-08-19 13:29:26.587666"], ["name", "comedy"], ["updated_at", "2014-08-19 13:29:26.587666"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mVideo Load (0.1ms)[0m  SELECT  "videos".* FROM "videos"  WHERE "videos"."category_id" = ?  ORDER BY created_at DESC LIMIT 6  [["category_id", 1]]
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-08-19 13:29:26.590712"], ["name", "comedy"], ["updated_at", "2014-08-19 13:29:26.590712"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2014-08-18 13:29:26.591554"], ["description", "space"], ["title", "Futurama"], ["updated_at", "2014-08-19 13:29:26.592136"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["category_id", 1], ["created_at", "2014-08-19 13:29:26.593244"], ["description", "wierd"], ["title", "South Park"], ["updated_at", "2014-08-19 13:29:26.593244"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mVideo Load (0.1ms)[0m  SELECT  "videos".* FROM "videos"  WHERE "videos"."category_id" = ?  ORDER BY created_at DESC LIMIT 6  [["category_id", 1]]
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"   ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "password_digest", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-08-19 13:29:26.849108"], ["email", "a"], ["password_digest", "$2a$04$HygTqssJwgGJuR5QTwgiK.OIbwNdVJS5ff/cE3cGOU0aJYLrCQnUi"], ["updated_at", "2014-08-19 13:29:26.849108"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'a' LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'a' LIMIT 1
+  [1m[36m (8.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-08-18 13:29:26.888326"], ["description", "cops"], ["title", "Dragnet"], ["updated_at", "2014-08-19 13:29:26.888816"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-08-19 13:29:26.890071"], ["description", "western"], ["title", "Maverick"], ["updated_at", "2014-08-19 13:29:26.890071"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mVideo Load (0.1ms)[0m  [1mSELECT "videos".* FROM "videos"  WHERE (title LIKE '%e%')  ORDER BY created_at DESC[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-08-18 13:29:26.892071"], ["description", "cops"], ["title", "Dragnet"], ["updated_at", "2014-08-19 13:29:26.892475"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-08-19 13:29:26.893360"], ["description", "western"], ["title", "Maverick"], ["updated_at", "2014-08-19 13:29:26.893360"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mVideo Load (0.1ms)[0m  SELECT "videos".* FROM "videos"  WHERE (title LIKE '%hello%')  ORDER BY created_at DESC
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-08-18 13:29:26.895218"], ["description", "cops"], ["title", "Dragnet"], ["updated_at", "2014-08-19 13:29:26.895678"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-08-19 13:29:26.896713"], ["description", "western"], ["title", "Maverick"], ["updated_at", "2014-08-19 13:29:26.896713"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mVideo Load (0.1ms)[0m  [1mSELECT "videos".* FROM "videos"  WHERE (title LIKE '%veri%')  ORDER BY created_at DESC[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-08-18 13:29:26.898964"], ["description", "cops"], ["title", "Dragnet"], ["updated_at", "2014-08-19 13:29:26.899675"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-08-19 13:29:26.901354"], ["description", "western"], ["title", "Maverick"], ["updated_at", "2014-08-19 13:29:26.901354"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-08-18 13:29:26.903108"], ["description", "cops"], ["title", "Dragnet"], ["updated_at", "2014-08-19 13:29:26.903628"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-08-19 13:29:26.904689"], ["description", "western"], ["title", "Maverick"], ["updated_at", "2014-08-19 13:29:26.904689"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mVideo Load (0.1ms)[0m  SELECT "videos".* FROM "videos"  WHERE (title LIKE '%Dragnet%')  ORDER BY created_at DESC
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'abbie.kuhic@daughertykaulke.com' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'abbie.kuhic@daughertykaulke.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "email", "full_name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-08-19 13:33:12.372563"], ["email", "abbie.kuhic@daughertykaulke.com"], ["full_name", "Modesto Baumbach"], ["password_digest", "$2a$04$3ZdliPo26Zyg1mxFQkmrP.uArwYbbXqvv/6uaL.wr9lX6aujWd4MO"], ["updated_at", "2014-08-19 13:33:12.372563"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-08-19 13:33:12.379521"], ["description", "Provident odio optio aut. Sit quia eum laboriosam dolor natus totam ipsa. Quia alias praesentium non et autem. Similique autem unde rem qui omnis."], ["title", "voluptas praesentium eos doloremque porro"], ["updated_at", "2014-08-19 13:33:12.379521"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by VideosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVideo Load (0.1ms)[0m  SELECT  "videos".* FROM "videos"  WHERE "videos"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered videos/show.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 12ms (Views: 10.0ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'vern_ruecker@kuhiclarson.info' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'vern_ruecker@kuhiclarson.info' LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("created_at", "email", "full_name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-08-19 13:33:12.410627"], ["email", "vern_ruecker@kuhiclarson.info"], ["full_name", "Penelope Lockman"], ["password_digest", "$2a$04$9BwHqG.C8CI5UnvCIF6XTOpCayPJaV6rHC87X4phlFjukTV4m4gSC"], ["updated_at", "2014-08-19 13:33:12.410627"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'norris_keebler@harveypaucek.name' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'norris_keebler@harveypaucek.name' LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "email", "full_name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-08-19 13:35:15.668893"], ["email", "norris_keebler@harveypaucek.name"], ["full_name", "Kyra Parisian"], ["password_digest", "$2a$04$v2rXmPNg6mZtlmcCRAp2Q.xOyMsQ0TmyKoXydTROSUb8d9TVf6vNO"], ["updated_at", "2014-08-19 13:35:15.668893"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-08-19 13:35:15.676732"], ["description", "Inventore modi enim provident pariatur porro consequatur sequi. Est optio est voluptas est similique eum perferendis. Doloribus accusamus odio dolorem occaecati autem error."], ["title", "laudantium recusandae rerum nihil maxime"], ["updated_at", "2014-08-19 13:35:15.676732"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by VideosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVideo Load (0.1ms)[0m  SELECT  "videos".* FROM "videos"  WHERE "videos"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered videos/show.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.2ms)
+  [1m[36m (8.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'deie@turnerwalter.name' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'deie@turnerwalter.name' LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "email", "full_name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-08-19 13:35:15.703937"], ["email", "deie@turnerwalter.name"], ["full_name", "Alta Langworth"], ["password_digest", "$2a$04$N4mOt7H4MQ0js3gTLB4TcuCvhgSaSsfmGJzbaPpWsAJ6Mrbw1SAze"], ["updated_at", "2014-08-19 13:35:15.703937"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-08-19 13:35:15.706147"], ["description", "Sint consequuntur omnis amet unde debitis. Et provident quia saepe voluptas officiis."], ["title", "omnis repellendus atque impedit nihil"], ["updated_at", "2014-08-19 13:35:15.706147"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by VideosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVideo Load (0.0ms)[0m  SELECT  "videos".* FROM "videos"  WHERE "videos"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'astrid@klockoweber.com' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'astrid@klockoweber.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "email", "full_name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-08-19 13:37:38.006493"], ["email", "astrid@klockoweber.com"], ["full_name", "Patrick Schaefer"], ["password_digest", "$2a$04$tyopFddlTkA.ntx0M1kV2.AaiAZJSM7XC4huHdeFr8HrkZYlExGyC"], ["updated_at", "2014-08-19 13:37:38.006493"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-08-19 13:37:38.013621"], ["description", "Culpa voluptatem cupiditate non voluptatum ut porro. Eum et molestiae necessitatibus mollitia laborum ad repellendus. Ab impedit rerum est ipsa quisquam. Doloribus esse qui sint aspernatur aut quia excepturi."], ["title", "consequatur a aperiam minima consequatur"], ["updated_at", "2014-08-19 13:37:38.013621"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by VideosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVideo Load (0.1ms)[0m  SELECT  "videos".* FROM "videos"  WHERE "videos"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered videos/show.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.2ms)
+  [1m[36m (8.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-08-19 13:37:38.038201"], ["description", "Error ut architecto consequatur dolores eaque. Rem ad earum deleniti quo recusandae. Accusantium voluptatem esse asperiores alias. Accusamus rerum voluptatem."], ["title", "qui et quas illum excepturi"], ["updated_at", "2014-08-19 13:37:38.038201"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by VideosController#show as HTML
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/sign_in
+Filter chain halted as :require_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'vince@wintheisermckenzie.com' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'vince@wintheisermckenzie.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "email", "full_name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-08-19 13:40:13.533782"], ["email", "vince@wintheisermckenzie.com"], ["full_name", "Chadd Hoppe"], ["password_digest", "$2a$04$QmQyTxlhsxxMDd69.WNlGeOonUdwoaV6w1Pih1X71r1oYSICZ3lzu"], ["updated_at", "2014-08-19 13:40:13.533782"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-08-19 13:40:13.540863"], ["description", "Ullam vero quia eligendi. Doloremque possimus rerum cumque unde."], ["title", "reprehenderit iste delectus vero sit"], ["updated_at", "2014-08-19 13:40:13.540863"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by VideosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVideo Load (0.1ms)[0m  SELECT  "videos".* FROM "videos"  WHERE "videos"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered videos/show.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.2ms)
+  [1m[36m (8.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-08-19 13:40:13.563542"], ["description", "Nam est illo. Mollitia qui ut."], ["title", "natus dolorem minus iste accusantium"], ["updated_at", "2014-08-19 13:40:13.563542"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by VideosController#show as HTML
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/sign_in
+Filter chain halted as :require_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'maritza.jacobson@buckridge.name' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'maritza.jacobson@buckridge.name' LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "email", "full_name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-08-19 13:41:07.801412"], ["email", "maritza.jacobson@buckridge.name"], ["full_name", "Justen Halvorson"], ["password_digest", "$2a$04$ojgALaWh1FrDbKIBQKtjHuoI9WiNrbUGO6b1xFKMfjmNcsIViGV72"], ["updated_at", "2014-08-19 13:41:07.801412"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-08-19 13:41:07.808521"], ["description", "Minima minus iusto. Est voluptate dolor optio ea eius quo iste. Quia temporibus ipsum rerum. Facere et tempore iste ut."], ["title", "quam et delectus suscipit debitis"], ["updated_at", "2014-08-19 13:41:07.808521"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by VideosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVideo Load (0.1ms)[0m  SELECT  "videos".* FROM "videos"  WHERE "videos"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered videos/show.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.1ms)
+  [1m[36m (8.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-08-19 13:41:07.831446"], ["description", "Quia architecto ut consequatur sit et vitae possimus. Voluptatibus ex neque. Perspiciatis et reiciendis et magnam dolore ullam. Modi soluta quasi corporis aperiam sapiente atque consequatur."], ["title", "tenetur necessitatibus adipisci dolorum rerum"], ["updated_at", "2014-08-19 13:41:07.831446"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by VideosController#show as HTML
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/sign_in
+Filter chain halted as :require_user rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-08-19 13:42:08.780779"], ["name", "comedy"], ["updated_at", "2014-08-19 13:42:08.780779"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2014-08-19 13:42:08.789520"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:42:08.789520"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["category_id", 1], ["created_at", "2014-08-19 13:42:08.791421"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:42:08.791421"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2014-08-19 13:42:08.792249"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:42:08.792249"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["category_id", 1], ["created_at", "2014-08-19 13:42:08.792980"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:42:08.792980"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2014-08-19 13:42:08.793744"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:42:08.793744"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["category_id", 1], ["created_at", "2014-08-19 13:42:08.794732"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:42:08.794732"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2014-08-18 13:42:08.795210"], ["description", "show"], ["title", "the_tonight_show"], ["updated_at", "2014-08-19 13:42:08.795657"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mVideo Load (0.2ms)[0m  [1mSELECT  "videos".* FROM "videos"  WHERE "videos"."category_id" = ?  ORDER BY created_at DESC LIMIT 6[0m  [["category_id", 1]]
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-08-19 13:42:08.804136"], ["name", "comedy"], ["updated_at", "2014-08-19 13:42:08.804136"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["category_id", 1], ["created_at", "2014-08-18 13:42:08.804945"], ["description", "space"], ["title", "Futurama"], ["updated_at", "2014-08-19 13:42:08.805460"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2014-08-19 13:42:08.806384"], ["description", "wierd"], ["title", "South Park"], ["updated_at", "2014-08-19 13:42:08.806384"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mVideo Load (0.1ms)[0m  [1mSELECT  "videos".* FROM "videos"  WHERE "videos"."category_id" = ?  ORDER BY created_at DESC LIMIT 6[0m  [["category_id", 1]]
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-08-19 13:42:08.809606"], ["name", "comedy"], ["updated_at", "2014-08-19 13:42:08.809606"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["category_id", 1], ["created_at", "2014-08-19 13:42:08.811555"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:42:08.811555"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2014-08-19 13:42:08.813276"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:42:08.813276"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["category_id", 1], ["created_at", "2014-08-19 13:42:08.815015"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:42:08.815015"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2014-08-19 13:42:08.816383"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:42:08.816383"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["category_id", 1], ["created_at", "2014-08-19 13:42:08.817507"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:42:08.817507"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2014-08-19 13:42:08.818439"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:42:08.818439"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["category_id", 1], ["created_at", "2014-08-19 13:42:08.819401"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:42:08.819401"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mVideo Load (0.1ms)[0m  SELECT  "videos".* FROM "videos"  WHERE "videos"."category_id" = ?  ORDER BY created_at DESC LIMIT 6  [["category_id", 1]]
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-08-19 13:42:08.822429"], ["name", "comedy"], ["updated_at", "2014-08-19 13:42:08.822429"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mVideo Load (0.1ms)[0m  SELECT  "videos".* FROM "videos"  WHERE "videos"."category_id" = ?  ORDER BY created_at DESC LIMIT 6  [["category_id", 1]]
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-08-19 13:42:08.824902"], ["name", "comedy"], ["updated_at", "2014-08-19 13:42:08.824902"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2014-08-18 13:42:08.826262"], ["description", "space"], ["title", "Futurama"], ["updated_at", "2014-08-19 13:42:08.827112"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["category_id", 1], ["created_at", "2014-08-19 13:42:08.828364"], ["description", "wierd"], ["title", "South Park"], ["updated_at", "2014-08-19 13:42:08.828364"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mVideo Load (0.1ms)[0m  SELECT  "videos".* FROM "videos"  WHERE "videos"."category_id" = ?  ORDER BY created_at DESC LIMIT 6  [["category_id", 1]]
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"   ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "password_digest", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-08-19 13:42:09.084625"], ["email", "a"], ["password_digest", "$2a$04$G6X7U0pnkbC/AI9dmpa9e.xhkNYxC0lS6MPnk/PcuWpzOFfhi6tKG"], ["updated_at", "2014-08-19 13:42:09.084625"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'a' LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'a' LIMIT 1
+  [1m[36m (7.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'ilene_quigley@kilback.org' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'ilene_quigley@kilback.org' LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "email", "full_name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-08-19 13:42:09.118494"], ["email", "ilene_quigley@kilback.org"], ["full_name", "Mrs. Nikko Glover"], ["password_digest", "$2a$04$2ratxCJy5nWkIFn9b/BVq.Bf8iJylt7gvmi1.Pj2JnALsCU4KqXOO"], ["updated_at", "2014-08-19 13:42:09.118494"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-08-19 13:42:09.119877"], ["description", "Omnis quidem quibusdam porro laborum nobis vitae nemo. Ab facere aut rerum dolorum cum sed."], ["title", "id aut sunt sunt maiores"], ["updated_at", "2014-08-19 13:42:09.119877"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by VideosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVideo Load (0.1ms)[0m  SELECT  "videos".* FROM "videos"  WHERE "videos"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered videos/show.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-08-19 13:42:09.130721"], ["description", "Ducimus eveniet aut nam aut autem itaque deserunt. Et ut veritatis error sapiente et. Ipsum ex aut."], ["title", "rerum eum similique earum iste"], ["updated_at", "2014-08-19 13:42:09.130721"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by VideosController#show as HTML
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/sign_in
+Filter chain halted as :require_user rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-08-18 13:42:09.149316"], ["description", "cops"], ["title", "Dragnet"], ["updated_at", "2014-08-19 13:42:09.149805"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-08-19 13:42:09.150844"], ["description", "western"], ["title", "Maverick"], ["updated_at", "2014-08-19 13:42:09.150844"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mVideo Load (0.1ms)[0m  SELECT "videos".* FROM "videos"  WHERE (title LIKE '%e%')  ORDER BY created_at DESC
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-08-18 13:42:09.152935"], ["description", "cops"], ["title", "Dragnet"], ["updated_at", "2014-08-19 13:42:09.153438"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-08-19 13:42:09.154767"], ["description", "western"], ["title", "Maverick"], ["updated_at", "2014-08-19 13:42:09.154767"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mVideo Load (0.1ms)[0m  [1mSELECT "videos".* FROM "videos"  WHERE (title LIKE '%hello%')  ORDER BY created_at DESC[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-08-18 13:42:09.157704"], ["description", "cops"], ["title", "Dragnet"], ["updated_at", "2014-08-19 13:42:09.158381"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-08-19 13:42:09.159911"], ["description", "western"], ["title", "Maverick"], ["updated_at", "2014-08-19 13:42:09.159911"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mVideo Load (0.1ms)[0m  SELECT "videos".* FROM "videos"  WHERE (title LIKE '%veri%')  ORDER BY created_at DESC
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-08-18 13:42:09.162939"], ["description", "cops"], ["title", "Dragnet"], ["updated_at", "2014-08-19 13:42:09.163699"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-08-19 13:42:09.164821"], ["description", "western"], ["title", "Maverick"], ["updated_at", "2014-08-19 13:42:09.164821"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-08-18 13:42:09.166446"], ["description", "cops"], ["title", "Dragnet"], ["updated_at", "2014-08-19 13:42:09.166916"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-08-19 13:42:09.167944"], ["description", "western"], ["title", "Maverick"], ["updated_at", "2014-08-19 13:42:09.167944"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mVideo Load (0.1ms)[0m  [1mSELECT "videos".* FROM "videos"  WHERE (title LIKE '%Dragnet%')  ORDER BY created_at DESC[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-08-19 13:43:49.227448"], ["name", "comedy"], ["updated_at", "2014-08-19 13:43:49.227448"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2014-08-19 13:43:49.248057"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:43:49.248057"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["category_id", 1], ["created_at", "2014-08-19 13:43:49.250707"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:43:49.250707"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2014-08-19 13:43:49.251754"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:43:49.251754"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["category_id", 1], ["created_at", "2014-08-19 13:43:49.252772"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:43:49.252772"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2014-08-19 13:43:49.253789"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:43:49.253789"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["category_id", 1], ["created_at", "2014-08-19 13:43:49.254741"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:43:49.254741"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2014-08-18 13:43:49.255362"], ["description", "show"], ["title", "the_tonight_show"], ["updated_at", "2014-08-19 13:43:49.256177"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mVideo Load (0.3ms)[0m  [1mSELECT  "videos".* FROM "videos"  WHERE "videos"."category_id" = ?  ORDER BY created_at DESC LIMIT 6[0m  [["category_id", 1]]
+  [1m[35m (8.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-08-19 13:43:49.277038"], ["name", "comedy"], ["updated_at", "2014-08-19 13:43:49.277038"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["category_id", 1], ["created_at", "2014-08-18 13:43:49.278395"], ["description", "space"], ["title", "Futurama"], ["updated_at", "2014-08-19 13:43:49.279207"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2014-08-19 13:43:49.280914"], ["description", "wierd"], ["title", "South Park"], ["updated_at", "2014-08-19 13:43:49.280914"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mVideo Load (0.1ms)[0m  [1mSELECT  "videos".* FROM "videos"  WHERE "videos"."category_id" = ?  ORDER BY created_at DESC LIMIT 6[0m  [["category_id", 1]]
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-08-19 13:43:49.285231"], ["name", "comedy"], ["updated_at", "2014-08-19 13:43:49.285231"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["category_id", 1], ["created_at", "2014-08-19 13:43:49.286561"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:43:49.286561"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2014-08-19 13:43:49.287686"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:43:49.287686"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["category_id", 1], ["created_at", "2014-08-19 13:43:49.288657"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:43:49.288657"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2014-08-19 13:43:49.289536"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:43:49.289536"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["category_id", 1], ["created_at", "2014-08-19 13:43:49.290299"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:43:49.290299"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2014-08-19 13:43:49.291080"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:43:49.291080"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["category_id", 1], ["created_at", "2014-08-19 13:43:49.292003"], ["description", "raboof"], ["title", "foobar"], ["updated_at", "2014-08-19 13:43:49.292003"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mVideo Load (0.1ms)[0m  SELECT  "videos".* FROM "videos"  WHERE "videos"."category_id" = ?  ORDER BY created_at DESC LIMIT 6  [["category_id", 1]]
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-08-19 13:43:49.294831"], ["name", "comedy"], ["updated_at", "2014-08-19 13:43:49.294831"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mVideo Load (0.1ms)[0m  SELECT  "videos".* FROM "videos"  WHERE "videos"."category_id" = ?  ORDER BY created_at DESC LIMIT 6  [["category_id", 1]]
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-08-19 13:43:49.297761"], ["name", "comedy"], ["updated_at", "2014-08-19 13:43:49.297761"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2014-08-18 13:43:49.298476"], ["description", "space"], ["title", "Futurama"], ["updated_at", "2014-08-19 13:43:49.298945"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "videos" ("category_id", "created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["category_id", 1], ["created_at", "2014-08-19 13:43:49.299805"], ["description", "wierd"], ["title", "South Park"], ["updated_at", "2014-08-19 13:43:49.299805"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mVideo Load (0.1ms)[0m  SELECT  "videos".* FROM "videos"  WHERE "videos"."category_id" = ?  ORDER BY created_at DESC LIMIT 6  [["category_id", 1]]
+  [1m[36m (1.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"   ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "password_digest", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-08-19 13:43:49.556151"], ["email", "a"], ["password_digest", "$2a$04$qg8s1/vd1clA964JB3pNzO/zTinX71SCCNkzquSZd3hpxzKIdtGXi"], ["updated_at", "2014-08-19 13:43:49.556151"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'a' LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'a' LIMIT 1
+  [1m[36m (8.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'alison@gusikowski.net' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'alison@gusikowski.net' LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "email", "full_name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-08-19 13:43:49.588549"], ["email", "alison@gusikowski.net"], ["full_name", "Theron Kirlin"], ["password_digest", "$2a$04$PL8f4t2HZxquFB17llsZnuBnBLIpxrdcdW1zV.xHBppTdYkQIbKxW"], ["updated_at", "2014-08-19 13:43:49.588549"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-08-19 13:43:49.590477"], ["description", "Assumenda quia blanditiis in cupiditate. Illum repellendus excepturi consequatur. Incidunt tempore recusandae nihil voluptatibus dolor. Deleniti quaerat nobis est."], ["title", "incidunt totam placeat aliquid tempore"], ["updated_at", "2014-08-19 13:43:49.590477"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by VideosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVideo Load (0.1ms)[0m  SELECT  "videos".* FROM "videos"  WHERE "videos"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered videos/show.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-08-19 13:43:49.603635"], ["description", "Consequatur vel rerum fugit reiciendis velit. Ipsa cum recusandae sint qui quos ea consequuntur."], ["title", "assumenda ipsum dignissimos consequatur eveniet"], ["updated_at", "2014-08-19 13:43:49.603635"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by VideosController#show as HTML
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/sign_in
+Filter chain halted as :require_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-08-18 13:43:49.625371"], ["description", "cops"], ["title", "Dragnet"], ["updated_at", "2014-08-19 13:43:49.625822"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-08-19 13:43:49.626912"], ["description", "western"], ["title", "Maverick"], ["updated_at", "2014-08-19 13:43:49.626912"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mVideo Load (0.1ms)[0m  SELECT "videos".* FROM "videos"  WHERE (title LIKE '%e%')  ORDER BY created_at DESC
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-08-18 13:43:49.629038"], ["description", "cops"], ["title", "Dragnet"], ["updated_at", "2014-08-19 13:43:49.629450"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-08-19 13:43:49.630362"], ["description", "western"], ["title", "Maverick"], ["updated_at", "2014-08-19 13:43:49.630362"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mVideo Load (0.2ms)[0m  [1mSELECT "videos".* FROM "videos"  WHERE (title LIKE '%hello%')  ORDER BY created_at DESC[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-08-18 13:43:49.633235"], ["description", "cops"], ["title", "Dragnet"], ["updated_at", "2014-08-19 13:43:49.634040"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-08-19 13:43:49.635755"], ["description", "western"], ["title", "Maverick"], ["updated_at", "2014-08-19 13:43:49.635755"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mVideo Load (0.1ms)[0m  SELECT "videos".* FROM "videos"  WHERE (title LIKE '%veri%')  ORDER BY created_at DESC
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-08-18 13:43:49.638504"], ["description", "cops"], ["title", "Dragnet"], ["updated_at", "2014-08-19 13:43:49.638956"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-08-19 13:43:49.639824"], ["description", "western"], ["title", "Maverick"], ["updated_at", "2014-08-19 13:43:49.639824"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-08-18 13:43:49.641258"], ["description", "cops"], ["title", "Dragnet"], ["updated_at", "2014-08-19 13:43:49.641713"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-08-19 13:43:49.642776"], ["description", "western"], ["title", "Maverick"], ["updated_at", "2014-08-19 13:43:49.642776"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mVideo Load (0.1ms)[0m  [1mSELECT "videos".* FROM "videos"  WHERE (title LIKE '%Dragnet%')  ORDER BY created_at DESC[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'ona@ondricka.com' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'ona@ondricka.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "email", "full_name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-08-19 13:43:57.569409"], ["email", "ona@ondricka.com"], ["full_name", "Bernadette Miller"], ["password_digest", "$2a$04$hR6t8zdZb2NC0d./lv4VAetsWegBjQeAw8bN1pmroYDIC2FwW.ruS"], ["updated_at", "2014-08-19 13:43:57.569409"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-08-19 13:43:57.576340"], ["description", "Omnis animi optio nihil ipsam. Reiciendis repellendus dolores commodi et. Velit natus aut sit a molestias vel eos. Fuga voluptatem totam atque similique aut et."], ["title", "reprehenderit quia natus labore est"], ["updated_at", "2014-08-19 13:43:57.576340"]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by VideosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVideo Load (0.1ms)[0m  SELECT  "videos".* FROM "videos"  WHERE "videos"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered videos/show.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.2ms)
+  [1m[36m (8.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-08-19 13:43:57.599539"], ["description", "Voluptatem et rerum quam quos. Est dolor ab. Placeat fuga pariatur non quasi molestiae."], ["title", "distinctio asperiores eos dolor ut"], ["updated_at", "2014-08-19 13:43:57.599539"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by VideosController#show as HTML
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/sign_in
+Filter chain halted as :require_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'kaci@trantow.net' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'kaci@trantow.net' LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "email", "full_name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-08-19 13:50:26.394647"], ["email", "kaci@trantow.net"], ["full_name", "Wilfred Halvorson"], ["password_digest", "$2a$04$rLxFaUX5COgH4ZonbYZVRenUbsLAPmyvNsSuH7AuYs1bc25frMFC2"], ["updated_at", "2014-08-19 13:50:26.394647"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-08-19 13:50:26.401756"], ["description", "Voluptas est consequatur dolore dolorem. Voluptatibus aut dolore magni est assumenda."], ["title", "mollitia sapiente dolorem dolores voluptas"], ["updated_at", "2014-08-19 13:50:26.401756"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by VideosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVideo Load (0.1ms)[0m  SELECT  "videos".* FROM "videos"  WHERE "videos"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered videos/show.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-08-19 13:50:26.415375"], ["description", "Voluptatem quis quaerat ea asperiores aspernatur ea. Rerum provident facilis eaque adipisci. Ullam et id qui. Facilis ut ratione rem non ut ad similique."], ["title", "nam porro et et debitis"], ["updated_at", "2014-08-19 13:50:26.415375"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by VideosController#show as HTML
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/sign_in
+Filter chain halted as :require_user rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'sarai.bergstrom@skiles.com' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'sarai.bergstrom@skiles.com' LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "full_name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-08-19 13:50:26.422826"], ["email", "sarai.bergstrom@skiles.com"], ["full_name", "Jay Abbott III"], ["password_digest", "$2a$04$45PD0b7u5mRD6Mhdrtu2yeF6kZepfETUv4tXGqK9G6m6C9yc1k5mW"], ["updated_at", "2014-08-19 13:50:26.422826"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-08-19 13:50:26.425111"], ["description", "Reprehenderit ab velit expedita eos. Consequatur eum explicabo neque est quia."], ["title", "Futurama"], ["updated_at", "2014-08-19 13:50:26.425111"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by VideosController#search as HTML
+  Parameters: {"search_term"=>"rama"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.1ms)
+  [1m[36mVideo Load (0.2ms)[0m  [1mSELECT "videos".* FROM "videos"  WHERE (title LIKE '%rama%')  ORDER BY created_at DESC[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'nannie_von@davis.biz' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'nannie_von@davis.biz' LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "email", "full_name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-08-19 13:51:41.835942"], ["email", "nannie_von@davis.biz"], ["full_name", "Alexandrea Kertzmann"], ["password_digest", "$2a$04$No3MuYqmKgjqZyab6nfymO4PBepLCREvTjLmzOLONIHOragCzqvba"], ["updated_at", "2014-08-19 13:51:41.835942"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-08-19 13:51:41.842890"], ["description", "Dolore voluptatem et eum quo sit ex. Voluptatem ut debitis molestiae."], ["title", "quo velit facilis dolor cumque"], ["updated_at", "2014-08-19 13:51:41.842890"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by VideosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVideo Load (0.1ms)[0m  SELECT  "videos".* FROM "videos"  WHERE "videos"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered videos/show.html.haml within layouts/application (0.4ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.1ms)
+  [1m[36m (8.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-08-19 13:51:41.868412"], ["description", "Et adipisci aut nemo quod. Ut illo quis in unde molestiae."], ["title", "numquam sapiente est dolor nobis"], ["updated_at", "2014-08-19 13:51:41.868412"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by VideosController#show as HTML
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/sign_in
+Filter chain halted as :require_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'kennith@powlowskipredovic.biz' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'kennith@powlowskipredovic.biz' LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "full_name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-08-19 13:51:41.878951"], ["email", "kennith@powlowskipredovic.biz"], ["full_name", "Paxton Turcotte"], ["password_digest", "$2a$04$Eb/ttiEz7Qk42A2xRUFyxu5gw2ZIBK3q0gXCPVBHRMze9.efNYLQO"], ["updated_at", "2014-08-19 13:51:41.878951"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-08-19 13:51:41.881720"], ["description", "Voluptatem commodi et incidunt. Aut non necessitatibus sint id nesciunt. Et molestiae tempore asperiores quia placeat. Eius voluptas sed architecto."], ["title", "Futurama"], ["updated_at", "2014-08-19 13:51:41.881720"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by VideosController#search as HTML
+  Parameters: {"search_term"=>"rama"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  [1m[36mVideo Load (0.1ms)[0m  [1mSELECT "videos".* FROM "videos"  WHERE (title LIKE '%rama%')  ORDER BY created_at DESC[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "videos" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-08-19 13:51:41.888655"], ["description", "Rem corrupti tempora aliquam nihil necessitatibus et cupiditate. Commodi sit fugit. Qui aut illo doloremque numquam."], ["title", "Futurama"], ["updated_at", "2014-08-19 13:51:41.888655"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by VideosController#search as HTML
+  Parameters: {"search_term"=>"rama"}
+Redirected to http://test.host/sign_in
+Filter chain halted as :require_user rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
