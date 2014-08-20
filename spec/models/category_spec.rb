@@ -1,7 +1,7 @@
 require "spec_helper"
 
 describe Category do
-  it { should have_many(:videos) }
+  it { should have_many(:videos).order("created_at DESC") }
 
   context "recent videos" do
     it "returns videos in reverse chronological order by created_at" do
