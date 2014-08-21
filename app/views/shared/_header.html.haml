@@ -3,9 +3,9 @@
     = link_to "TL-FLiX", root_path
   - if current_user
     %ul.col-md-8.clearfix
-      %li= link_to "Videos"
-      %li= link_to "My Queue"
-      %li= link_to "People"
+      %li= link_to "Videos", home_path
+      %li= link_to "Queue", queue_path
+      %li= link_to "People", "ui/people"
       = form_tag("/videos/search", method: 'get') do
         = text_field_tag :search_term
         .controls
