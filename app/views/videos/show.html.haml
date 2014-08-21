@@ -7,10 +7,17 @@
         %header
           %h3
             = @video.title
-          %span Rating: x/5.0
+          %span Rating: 
+          - if @reviews.count > 0
+            = @reviews.average(:rating)
+          - else
+            = 0
+          %span / 5
         %p
           = @video.description
         .actions
+          %a.btn.btn-primary(href="") Watch Now
+          %a.btn.btn-primary(href="") Queue It Up
 
 %section.reviews.container
   .row
@@ -25,27 +32,6 @@
         %fieldset.form-group.actions.clearfix
           %input(type="submit" value="Submit" class="btn btn-danger")
           = link_to 'Cancel', @video, class: "btn btn-default"
-
-      / %form
-      /   %fieldset
-      /     .form-group
-      /       %label Rate this video
-      /       .row
-      /         .col-sm-3
-      /           %select.form-control(name="")
-      /             %option(value="5") 5 Stars
-      /             %option(value="4") 4 Stars
-      /             %option(value="3") 3 Stars
-      /             %option(value="2") 2 Stars
-      /             %option(value="1") 1 Star
-      /     .form-group
-      /       %label Write Review
-      /       .row
-      /         .col-sm-8
-      /           %textarea.form-control(name="" rows="6")
-      /   %fieldset.form-group.actions.clearfix
-      /     %input(type="submit" value="Submit" class="btn")
-      /     %a(href="") Cancel
 
       %header
         %h3 User Reviews (#{@reviews.count})
