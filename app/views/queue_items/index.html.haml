@@ -17,19 +17,13 @@
             - @queue_items.each do |item|
               %tr
                 %td
-                  %input.form-control(type="text" value="1")
+                  = item.order
                 %td
                   = link_to item.video_title, item.video
                 %td
                   = button_to "Play", nil, class: "btn btn-default"
                 %td
                   = item.rating
-                  / %select.form-group(name="")
-                  /   %option(value="5") 5 Stars
-                  /   %option(value="4") 4 Stars
-                  /   %option(value="3") 3 Stars
-                  /   %option(value="2") 2 Stars
-                  /   %option(value="1") 1 Star
                 %td
                   = link_to item.category_name, item.category
                 %td

@@ -18,4 +18,52 @@ describe QueueItemsController do
       expect(response).to redirect_to sign_in_path
     end
   end
+
+  context "POST create authenticated" do
+    before do
+      @user = Fabricate(:user)
+      session[:user_id] = @user.id
+      @video = Fabricate(:video)
+      post :create, video_id: @video.id
+    end
+
+    it "redirects to queue page" do
+      expect(response).to redirect_to queue_path
+    end
+
+    it "creates a queue item" do
+      expect(QueueItem.count).to eq(1)
+    end
+
+    it "creates a queue item associated with the video" do
+      expect(QueueItem.first.video).to eq(@video)
+    end
+
+    it "creates a queue item associated with the signed in user" do
+      expect(QueueItem.first.user).to eq(@user)
+    end
+
+    it "puts the video at bottom of queue" do
+      video_bottom = Fabricate(:video)
+      post :create, video_id: video_bottom.id
+      video_bottom_queue_item = QueueItem.where(video_id: video_bottom, user_id: @user.id).first
+
+      expect(video_bottom_queue_item.order).to eq(2)
+    end
+
+    it "does not allow video in queue multiple times" do
+      video_dup = @video
+      post :create, video_id: video_dup.id
+
+      expect(@user.queue_items.count).to eq(1)
+    end
+  end
+
+  context 'POST create unauthenticated' do
+    it "redirects to sign in page for unauthenticated users" do
+      post :create, video_id: 3
+
+      expect(response).to redirect_to sign_in_path  
+    end
+  end
 end

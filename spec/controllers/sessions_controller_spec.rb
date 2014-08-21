@@ -19,12 +19,12 @@ describe SessionsController do
   describe 'POST create' do
     context 'with valid credentials' do
       before do
-        @gabby = Fabricate(:user)
-        post :create, email: @gabby.email, password: @gabby.password
+        @user = Fabricate(:user)
+        post :create, email: @user.email, password: @user.password
       end
       
       it "puts the signed in user in the session" do
-        expect(session[:user_id]).to eq(@gabby.id)
+        expect(session[:user_id]).to eq(@user.id)
       end
 
       it "redirects to the home page" do
@@ -38,8 +38,8 @@ describe SessionsController do
 
     context 'with invalid credentials' do
       before do
-        @gabby = Fabricate(:user)
-        post :create, email: @gabby.email, password: @gabby.password+'x'
+        @user = Fabricate(:user)
+        post :create, email: @user.email, password: @user.password+'x'
       end
       
       it "does not put the signed in user in the session" do
