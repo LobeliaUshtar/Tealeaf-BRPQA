@@ -11,6 +11,12 @@ class QueueItemsController < ApplicationController
     redirect_to queue_path
   end
 
+  def destroy
+    @queue_item = QueueItem.find(params[:id])
+    @queue_item.destroy if current_user.queue_items.include?(@queue_item)
+    redirect_to queue_path
+  end
+
   private
     def queue_video(video)
       @queue_item = QueueItem.create(video: @video, user: current_user, order: new_queue_spot) unless current_user_queued?(@video)
