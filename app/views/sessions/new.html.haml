@@ -1,30 +1,12 @@
 %section.sign_in.container
   .row
     .col-sm-10.col-sm-offset-1
-      / this part has shortened fields and code kinda messy but does submit
-      = bootstrap_form_for sign_in_path do
+      = bootstrap_form_tag url: sign_in_path do |f|
         %header
           %h1 Sign In
         %fieldset
-          .form-group
-            =label_tag :email, 'Email Address'
-          .form-group
-            =text_field_tag :email
-          .form-group
-            =label_tag :email, 'Password'
-          .form-group
-            =password_field_tag :password
+          = f.email_field :email, label: 'Email Address', autofocus: true
+          = f.password_field :password
         %fieldset.form-group.action
           .controls
             %input(type="submit" value="Sign in" class="btn btn-danger")
-
-      / this part produces nice long fields like the sign up page but won't submit - PREFER LONGER FIELDS PERSONALLY
-      / = bootstrap_form_for sign_in_path do |f|
-      /   %header
-      /     %h1 Sign In
-      /   %fieldset
-      /     = f.email_field :email, label: 'Email Address', autofocus: true
-      /     = f.password_field :password
-      /   %fieldset.form-group.action
-      /     .controls
-      /       %input(type="submit" value="Sign in" class="btn btn-danger")

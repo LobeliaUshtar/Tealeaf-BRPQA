@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 20140821170139) do
   end
 
   create_table "queue_items", force: true do |t|
-    t.integer  "order"
+    t.integer  "position"
     t.integer  "video_id"
     t.integer  "user_id"
     t.datetime "created_at"

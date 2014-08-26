@@ -12,14 +12,25 @@ class QueueItemsController < ApplicationController
   end
 
   def destroy
-    @queue_item = QueueItem.find(params[:id])
-    @queue_item.destroy if current_user.queue_items.include?(@queue_item)
+    queue_item = QueueItem.find(params[:id])
+    queue_item.destroy if current_user.queue_items.include?(queue_item)
+    normalize_queue_item_position
+    redirect_to queue_path
+  end
+
+  def update
+    begin
+      update_queue_items
+      normalize_queue_item_position
+    rescue ActiveRecord::RecordInvalid
+      flash[:danger] = "Invalid position number."
+    end
     redirect_to queue_path
   end
 
   private
     def queue_video(video)
-      @queue_item = QueueItem.create(video: @video, user: current_user, order: new_queue_spot) unless current_user_queued?(@video)
+      @queue_item = QueueItem.create(video: @video, user: current_user, position: new_queue_spot) unless current_user_queued?(@video)
     end
 
     def new_queue_spot
@@ -28,6 +39,21 @@ class QueueItemsController < ApplicationController
 
     def current_user_queued?(video)
       current_user.queue_items.map(&:video).include?(video)
+    end
+
+    def update_queue_items
+      ActiveRecord::Base.transaction do
+        params[:queue_items].each do |data|
+          queue_item = QueueItem.find(data["id"])
+          queue_item.update_attributes!(position: data["position"]) if queue_item.user == current_user
+        end
+      end
+    end
+
+    def normalize_queue_item_position
+      current_user.queue_items.each_with_index do |item, index|
+        item.update_attributes(position: index+1)      
+      end
     end
   # private end
 end
