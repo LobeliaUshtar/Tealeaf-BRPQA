@@ -20,11 +20,12 @@ describe QueueItemsController do
   end
 
   context "POST create authenticated" do
+    let(:user) { Fabricate(:user) }
+    let(:video) { Fabricate(:video) }
+
     before do
-      @user = Fabricate(:user)
-      session[:user_id] = @user.id
-      @video = Fabricate(:video)
-      post :create, video_id: @video.id
+      session[:user_id] = user.id
+      post :create, video_id: video.id
     end
 
     it "redirects to queue page" do
@@ -36,26 +37,26 @@ describe QueueItemsController do
     end
 
     it "creates a queue item associated with the video" do
-      expect(QueueItem.first.video).to eq(@video)
+      expect(QueueItem.first.video).to eq(video)
     end
 
     it "creates a queue item associated with the signed in user" do
-      expect(QueueItem.first.user).to eq(@user)
+      expect(QueueItem.first.user).to eq(user)
     end
 
     it "puts the video at bottom of queue" do
       video_bottom = Fabricate(:video)
       post :create, video_id: video_bottom.id
-      video_bottom_queue_item = QueueItem.where(video_id: video_bottom, user_id: @user.id).first
+      video_bottom_queue_item = QueueItem.where(video_id: video_bottom, user_id: user.id).first
 
       expect(video_bottom_queue_item.position).to eq(2)
     end
 
     it "does not allow video in queue multiple times" do
-      video_dup = @video
+      video_dup = video
       post :create, video_id: video_dup.id
 
-      expect(@user.queue_items.count).to eq(1)
+      expect(user.queue_items.count).to eq(1)
     end
   end
 
@@ -68,11 +69,12 @@ describe QueueItemsController do
   end
 
   context 'DELETE destroy authenticated' do
+    let(:user) { Fabricate(:user) }
+    let(:queue_item) { Fabricate(:queue_item, user: user) }
+
     before do
-      @user = Fabricate(:user)
-      session[:user_id] = @user.id
-      @queue_item = Fabricate(:queue_item, user: @user)
-      delete :destroy, id: @queue_item.id
+      session[:user_id] = user.id
+      delete :destroy, id: queue_item.id
     end
 
     it "redirects to the queue page" do
@@ -84,8 +86,8 @@ describe QueueItemsController do
     end
 
     it "normalizes the remaining queue items" do
-      queue_item1 = Fabricate(:queue_item, user: @user, position: 1)
-      queue_item2 = Fabricate(:queue_item, user: @user, position: 2)
+      queue_item1 = Fabricate(:queue_item, user: user, position: 1)
+      queue_item2 = Fabricate(:queue_item, user: user, position: 2)
       delete :destroy, id: queue_item1.id
 
       expect(QueueItem.first.position).to eq(1)
@@ -93,8 +95,8 @@ describe QueueItemsController do
 
     it "only deletes queued item if current user owns it" do
       x_user = Fabricate(:user)
-      @queue_item = Fabricate(:queue_item, user: x_user)
-      delete :destroy, id: @queue_item.id
+      queue_item = Fabricate(:queue_item, user: x_user)
+      delete :destroy, id: queue_item.id
 
       expect(QueueItem.count).to eq(1)
     end
@@ -110,12 +112,14 @@ describe QueueItemsController do
 
   describe 'POST update' do
     context 'with valid inputs' do
+      let(:user) { Fabricate(:user) }
+      let(:video) { Fabricate(:video) }
+      let(:queue_item1) { Fabricate(:queue_item, user: user, video: video, position: 1) }
+      let(:queue_item2) { Fabricate(:queue_item, user: user, video: video, position: 2) }
+
       before do
-        @user = Fabricate(:user)
-        session[:user_id] = @user.id
-        @queue_item1 = Fabricate(:queue_item, user: @user, position: 1)
-        @queue_item2 = Fabricate(:queue_item, user: @user, position: 2)
-        post :update, queue_items: [{id: @queue_item1.id, position: 2}, {id: @queue_item2.id, position: 1}]
+        session[:user_id] = user.id
+        post :update, queue_items: [{id: queue_item1.id, position: 2}, {id: queue_item2.id, position: 1}]
       end
 
       it "redirects to the queue page" do
@@ -123,22 +127,23 @@ describe QueueItemsController do
       end
 
       it "reorders the queue" do
-        expect(@user.queue_items).to eq([@queue_item2, @queue_item1])
+        expect(user.queue_items).to eq([queue_item2, queue_item1])
       end
 
       it "normalizes the position numbers" do
-        post :update, queue_items: [{id: @queue_item1.id, position: 3}, {id: @queue_item2.id, position: 2}]
+        post :update, queue_items: [{id: queue_item1.id, position: 3}, {id: queue_item2.id, position: 2}]
 
-        expect(@user.queue_items.map(&:position)).to  eq([1, 2])
+        expect(user.queue_items.map(&:position)).to  eq([1, 2])
       end
     end
 
     context 'with invalid inputs' do
       before do
         @user = Fabricate(:user)
+        @video = Fabricate(:video)
         session[:user_id] = @user.id
-        @queue_item1 = Fabricate(:queue_item, user: @user, position: 1)
-        @queue_item2 = Fabricate(:queue_item, user: @user, position: 2)
+        @queue_item1 = Fabricate(:queue_item, user: @user, video: @video, position: 1)
+        @queue_item2 = Fabricate(:queue_item, user: @user, video: @video, position: 2)
         post :update, queue_items: [{id: @queue_item1.id, position: 3.4}, {id: @queue_item2.id, position: 1}]
       end
 
@@ -169,9 +174,10 @@ describe QueueItemsController do
       it "does not change the queue items" do
         user_a = Fabricate(:user)
         user_z = Fabricate(:user)
+        video = Fabricate(:video)
         session[:user_id] = user_a.id
-        queue_item1 = Fabricate(:queue_item, user: user_z, position: 1)
-        queue_item2 = Fabricate(:queue_item, user: user_a, position: 2)
+        queue_item1 = Fabricate(:queue_item, user: user_z, video: video, position: 1)
+        queue_item2 = Fabricate(:queue_item, user: user_a, video: video, position: 2)
         post :update, queue_items: [{id: queue_item1.id, position: 2}, {id: queue_item2.id, position: 1}]
 
         expect(queue_item1.reload.position).to  eq(1)

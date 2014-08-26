@@ -27,7 +27,7 @@
           Write a Review
       =bootstrap_form_for [@video, Review.new] do |f|
         %fieldset
-          = f.select :rating, options_for_select([5, 4, 3, 2, 1].map {|number| [pluralize(number, "Star")]}), label: 'Number of Stars'
+          = f.select :rating, options_for_reviews, label: 'Number of Stars'
           =f.text_area :comment, rows: 6, class: 'span6', label: 'What you thought?'
         %fieldset.form-group.actions.clearfix
           %input(type="submit" value="Submit" class="btn btn-danger")
