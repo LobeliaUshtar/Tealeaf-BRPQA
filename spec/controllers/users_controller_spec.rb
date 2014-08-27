@@ -25,8 +25,8 @@ describe UsersController do
     end
 
     context 'with invalid input' do
-      before(:each) do
-        post :create, user: { email: "gabby@example.com",  full_name: "Gabitha" }
+      before do
+        post :create, user: { email: "user@example.com",  full_name: "user" }
       end
 
       it "does not create the user" do
