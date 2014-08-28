@@ -6,10 +6,10 @@
       %li= link_to "Videos", home_path
       %li= link_to "Queue", queue_path
       %li= link_to "People", "ui/people"
-      = form_tag("/videos/search", method: 'get') do
+      = bootstrap_form_tag url: "/videos/search", method: 'get' do
         = text_field_tag :search_term
         .controls
-          %input(type="submit" value="Search" class="btn btn-default")
+          %input(type="submit" value="Search" class="btn btn-xs btn-default")
     #user_links.pull-right
       %ul
         %li.dropdown

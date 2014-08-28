@@ -13,6 +13,7 @@ gem 'faker'
 group :assets do
   gem 'sass-rails'
   gem 'coffee-rails'
+  gem 'capybara-rails'
   gem 'uglifier'
   gem 'jbuilder', '~> 2.0'
   gem 'turbolinks'
