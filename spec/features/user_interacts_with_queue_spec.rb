@@ -44,7 +44,7 @@ feature "User interacts with the queue" do
   end
 
   def update_queue
-    click_button "Update Instant Queue"ß
+    click_button "Update Instant Queue"
   end
 
   def set_video_position(video, position)
