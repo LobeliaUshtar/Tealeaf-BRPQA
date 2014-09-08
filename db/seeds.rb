@@ -1,4 +1,5 @@
 gabby = User.create!(email: "gabby@example.com", password: "password", password_confirmation: "password", full_name: "Gabitha")
+kevin = User.create!(email: "kevin@example.com", password: "password", password_confirmation: "password", full_name: "Kevin Wang")
 
 Category.create!(name: 'Mystery')
 Category.create!(name: 'Comedy')
