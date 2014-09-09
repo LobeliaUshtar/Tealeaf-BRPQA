@@ -21,4 +21,18 @@ Myflix::Application.configure do
   DATABASE_OPERATOR = {
     like_operator: 'ILIKE'
   }
+
+  config.action_mailer.default_url_options = { 'http://lit-dusk-7603.herokuapp.com' }
+
+  config.action_mailer.delivery_method = :smtp
+
+  config.action_mailer.smtp_settings = {
+    :address => ENV['smtp_server'],
+    :port => ENV['smtp_port'],
+    :domain => 'lit-dusk-7603.herokuapp.com',
+    :user_name => ENV['smtp_username'],
+    :password => ENV['smtp_password'],
+    :authentification => 'plain',
+    :enable_starttls_auto => true
+  }
 end
