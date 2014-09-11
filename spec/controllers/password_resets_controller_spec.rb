@@ -27,36 +27,26 @@ describe PasswordResetsController do
 
   describe "POST create" do
     context 'with valid token' do
-      it "redirects to the sign in page" do
-        user = Fabricate(:user, token: '12345', password: 'old_password', password_confirmation: 'old_password')
-        user.update_column(:token, '12345')
+      before do
+        @user = Fabricate(:user, token: '12345', password: 'old_password', password_confirmation: 'old_password')
+        @user.update_column(:token, '12345')
         post :create, token: '12345', password: 'new_password', password_confirmation: 'new_password'
-
-        expect(response).to redirect_to sign_in_path
       end
 
       it "updates the user's password" do
-        user = Fabricate(:user, token: '12345')
-        user.update_column(:token, '12345')
-        post :create, token: '12345', password: 'new_password', password_confirmation: 'new_password'
-
-        expect(user.reload.authenticate('new_password')).to eq(true)
+        expect(@user.reload.password).to eq('new_password')
+      end
+      
+      it "redirects to the sign in page" do
+        expect(response).to redirect_to sign_in_path
       end
 
       it "sets the flash success message" do
-        user = Fabricate(:user, token: '12345', password: 'old_password', password_confirmation: 'old_password')
-        user.update_column(:token, '12345')
-        post :create, token: '12345', password: 'new_password', password_confirmation: 'new_password'
-
         expect(flash[:success]).to be_present
       end
 
       it "regenerates the user token" do
-        user = Fabricate(:user, token: '12345', password: 'old_password', password_confirmation: 'old_password')
-        user.update_column(:token, '12345')
-        post :create, token: '12345', password: 'new_password', password_confirmation: 'new_password'
-
-        expect(user.reload.token).not_to eq('12345')
+        expect(@user.reload.token).not_to eq('12345')
       end
     end
 

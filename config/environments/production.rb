@@ -24,8 +24,6 @@ Myflix::Application.configure do
 
   config.action_mailer.default_url_options = { host: 'http://lit-dusk-7603.herokuapp.com' }
 
-  config.action_mailer.delivery_method = :smtp
-
   config.action_mailer.smtp_settings = {
     :address => ENV['smtp_server'],
     :port => ENV['smtp_port'],
@@ -33,6 +31,9 @@ Myflix::Application.configure do
     :user_name => ENV['smtp_username'],
     :password => ENV['smtp_password'],
     :authentification => 'plain',
-    :enable_starttls_auto => true
   }
+  
+  ActionMailer::Base.delivery_method = :smtp
+
+  config.action_dispatch.show_exceptions = false
 end
