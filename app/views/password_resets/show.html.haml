@@ -1,0 +1,13 @@
+%section.reset_password.container
+  .row
+    .col-sm-10.col-sm-offset-1
+      = bootstrap_form_tag url: password_resets_path do |f|
+        %header
+          %h1 Reset Your Password
+        %fieldset.form-group
+          = f.password_field :password, label: 'New Password', autofocus: true
+          = f.password_field :password_confirmation, label: 'Confirm New Password'
+          = hidden_field_tag :token, @token
+        .btn-group
+          .controls
+            %input(type="submit" value="Reset Password" class="btn btn-danger")

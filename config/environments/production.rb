@@ -22,7 +22,7 @@ Myflix::Application.configure do
     like_operator: 'ILIKE'
   }
 
-  config.action_mailer.default_url_options = { 'http://lit-dusk-7603.herokuapp.com' }
+  config.action_mailer.default_url_options = { host: 'http://lit-dusk-7603.herokuapp.com' }
 
   config.action_mailer.delivery_method = :smtp
 

@@ -7,6 +7,7 @@
         %fieldset
           = f.email_field :email, label: 'Email Address', autofocus: true
           = f.password_field :password
-        %fieldset.form-group.action
+        .btn-group
           .controls
             %input(type="submit" value="Sign in" class="btn btn-danger")
+            = link_to "Forgot your password?", forgot_password_path, class: "btn btn-default"
