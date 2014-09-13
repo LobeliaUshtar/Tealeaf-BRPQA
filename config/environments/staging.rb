@@ -10,7 +10,7 @@ Myflix::Application.configure do
   config.assets.compress = true
   config.assets.js_compressor = :uglifier
 
-  config.assets.compile = true
+  config.assets.compile = false
 
   config.assets.digest = true
 
@@ -18,7 +18,7 @@ Myflix::Application.configure do
 
   config.active_support.deprecation = :notify
 
-  config.action_mailer.default_url_options = { host: 'http://lit-dusk-7603.herokuapp.com' }
+  config.action_mailer.default_url_options = { host: 'http://mysterious-lowlands-6704-stage.herokuapp.com' }
 
   ActionMailer::Base.smtp_settings = {
     :address => ENV['smtp_server'],
@@ -32,8 +32,4 @@ Myflix::Application.configure do
   ActionMailer::Base.delivery_method = :smtp
 
   config.action_dispatch.show_exceptions = false
-
-  DATABASE_OPERATOR = {
-    like_operator: 'ILIKE'
-  }
 end

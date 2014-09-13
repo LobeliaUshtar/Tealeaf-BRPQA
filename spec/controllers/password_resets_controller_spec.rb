@@ -34,7 +34,7 @@ describe PasswordResetsController do
       end
 
       it "updates the user's password" do
-        expect(@user.reload.password).to eq('new_password')
+        expect(@user.reload.authenticate('new_password')).to be_truthy
       end
       
       it "redirects to the sign in page" do
