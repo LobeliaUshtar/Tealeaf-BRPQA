@@ -11,7 +11,6 @@ gem 'fabrication'
 gem 'faker'
 gem 'sass-rails'
 gem 'coffee-rails'
-gem 'capybara-rails'
 gem 'uglifier'
 gem 'jbuilder', '~> 2.0'
 gem 'turbolinks'
@@ -32,6 +31,7 @@ end
 group :test do
   gem 'shoulda-matchers'
   gem 'capybara'
+  gem 'capybara-rails'
 end
 
 group :production do
