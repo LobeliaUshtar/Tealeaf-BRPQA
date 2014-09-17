@@ -23,3 +23,7 @@
        url('../assets/glyphicons-halflings-regular.ttf') format('truetype'), 
        url('../assets/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
+
+.dropdown-menu a{
+    color: #000000 !important;
+}
