@@ -65,6 +65,8 @@ GEM
     fabrication (2.11.3)
     faker (1.4.3)
       i18n (~> 0.5)
+    figaro (1.0.0)
+      thor (~> 0.14)
     haml (4.0.5)
       tilt
     haml-rails (0.5.3)
@@ -181,6 +183,7 @@ DEPENDENCIES
   coffee-rails
   fabrication
   faker
+  figaro
   haml-rails
   jbuilder (~> 2.0)
   jquery-rails

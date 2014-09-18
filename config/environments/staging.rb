@@ -18,14 +18,14 @@ Myflix::Application.configure do
 
   config.active_support.deprecation = :notify
 
-  config.action_mailer.default_url_options = { host: 'http://mysterious-lowlands-6704-stage.herokuapp.com' }
+  config.action_mailer.default_url_options = { host: 'http://lit-dusk-7603.herokuapp.com' }
 
   ActionMailer::Base.smtp_settings = {
-    :address => ENV['smtp_server'],
-    :port => ENV['smtp_port'],
-    :domain => 'lit-dusk-7603.herokuapp.com',
-    :user_name => ENV['smtp_username'],
-    :password => ENV['smtp_password'],
+    :address => "smtp.gmail.com",
+    :port => "587",
+    :domain => "gmail.com",
+    :user_name => ENV['GMAIL_SMTP_USER'],
+    :password => ENV['GMAIL_SMTP_PASSWORD'],
     :authentification => 'plain',
   }
   

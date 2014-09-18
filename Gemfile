@@ -9,6 +9,7 @@ gem 'bootstrap_form'
 gem 'bcrypt'
 gem 'fabrication'
 gem 'faker'
+gem "figaro"
 gem 'sass-rails'
 gem 'coffee-rails'
 gem 'uglifier'
