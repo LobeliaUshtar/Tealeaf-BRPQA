@@ -43,6 +43,9 @@ GEM
     capybara-console (0.0.4)
       capybara
       rails (>= 3.0)
+    capybara-email (2.4.0)
+      capybara (~> 2.4)
+      mail
     capybara-rails (0.0.2)
       capybara
       capybara-console
@@ -179,6 +182,7 @@ DEPENDENCIES
   bootstrap-sass
   bootstrap_form
   capybara
+  capybara-email
   capybara-rails
   coffee-rails
   fabrication
@@ -187,6 +191,7 @@ DEPENDENCIES
   haml-rails
   jbuilder (~> 2.0)
   jquery-rails
+  launchy
   letter_opener
   minitest
   pg
