@@ -45,4 +45,23 @@ describe User do
       expect(user.follows?(user_x)).to_not eq(true)
     end
   end
+
+  context '#follow' do
+    before do
+      @user = Fabricate(:user)
+      @user_x = Fabricate(:user)
+    end
+
+    it "follows another user" do
+      @user.follow(@user_x)
+
+      expect(@user.follows?(@user_x)).to eq(true)
+    end
+
+    it "does not follow self" do
+      @user.follow(@user)
+
+      expect(@user.follows?(@user)).to eq(false)
+    end
+  end
 end

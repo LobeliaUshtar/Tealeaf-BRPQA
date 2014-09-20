@@ -10,7 +10,7 @@ describe UsersController do
   end
 
   describe "POST create" do
-    context 'with valid input' do
+    context 'with valid input (no tokens)' do
       before do
         post :create, user: Fabricate.attributes_for(:user)
       end
@@ -21,6 +21,27 @@ describe UsersController do
 
       it "redirects to the sign in page" do
         expect(response).to redirect_to sign_in_path
+      end
+    end
+
+    context 'with valid input (tokens)' do
+      before do
+        @user = Fabricate(:user)
+        @invitation = Fabricate(:invitation, inviter: @user, recipient_email: 'ex@example.com')
+        post :create, user: {email: 'ex@example.com', password: 'password', password_confirmation: 'password', full_name: 'Ex Ample'}, invitation_token: @invitation.token
+        @ex = User.where(email: 'ex@example.com').first
+      end
+
+      it "makes the user follow the inviter" do
+        expect(@ex.follows?(@user)).to eq(true)
+      end
+
+      it "makes the inviter follow the user" do
+        expect(@user.follows?(@ex)).to eq(true)
+      end
+
+      it "expires the token upon acceptance" do
+        expect(Invitation.first.token).to be_nil
       end
     end
 
@@ -75,6 +96,34 @@ describe UsersController do
 
       expect(assigns(:user)).to eq(user)
     end
+  end
 
+  context 'GET new_with_invitation_token with valid tokens' do
+    before do
+      @invitation = Fabricate(:invitation)
+      get :new_with_invitation_token, token: @invitation.token
+    end
+
+    it "renders the :new view template" do
+      expect(response).to render_template :new
+    end
+
+    it "sets @user with recipient's email" do
+      expect(assigns(:user).email).to eq(@invitation.recipient_email)
+    end
+
+    it "sets @invitation_token" do
+      expect(assigns(:invitation_token)).to eq(@invitation.token)
+    end
+  end
+
+  context 'GET new_with_invitation_token with invalid tokens' do
+    before do
+      get :new_with_invitation_token, token: 'vzbfiosdyb'
+    end
+
+    it "redirects to expired token page" do
+      expect(response).to redirect_to expired_token_path
+    end
   end
 end
