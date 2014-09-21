@@ -11,3 +11,9 @@ it_behaves_like "requires sign in" do
   let(:action) {  }
 end
 =end
+
+shared_examples "tokenable" do
+  it "generates a random token when the user is created" do
+    expect(object.token).to be_present
+  end
+end
